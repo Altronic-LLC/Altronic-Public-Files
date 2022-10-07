@@ -1,0 +1,844 @@
+[
+  {
+    "groups": [
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 6,
+            "height": 1,
+            "cid": "40000:81",
+            "auto": null,
+            "button": {
+              "label": "PRIMARY F1 START",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "width": 1,
+            "height": 2,
+            "cid": "30000:9",
+            "auto": {
+              "label": "PRIMARY SUPPLY VOLTAGE"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "width": 1,
+            "height": 2,
+            "cid": "10000:8",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "width": 2,
+            "height": 2,
+            "cid": "30000:20",
+            "auto": {
+              "label": "PRIMARY CURRENT STEPPER POS"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "width": 4,
+            "height": 3,
+            "cid": "30000:18",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": {
+              "label": "PRIMARY O2 FEEDBACK",
+              "displayMin": "0",
+              "displayMax": "2"
+            }
+          },
+          {
+            "row": 2,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "30000:18",
+            "auto": {
+              "label": "PRIMARY O2 FEEDBACK"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:36",
+            "auto": {
+              "label": "PRIMARY O2 SET POINT"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 6,
+            "col": 5,
+            "width": 2,
+            "height": 1,
+            "cid": "30000:29",
+            "auto": {
+              "label": "PRIMARY FINAL O2 SETPOINT"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 4,
+            "height": 1,
+            "cid": "40000:73",
+            "auto": null,
+            "button": {
+              "label": "PRIMARY MANUAL",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "width": 4,
+            "height": 1,
+            "cid": "40000:73",
+            "auto": null,
+            "button": {
+              "label": "PRIMARY AUTOMATIC",
+              "value": "0"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 1,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:79",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:75",
+            "auto": null,
+            "button": {
+              "label": "PRI Increase 25 steps",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:76",
+            "auto": null,
+            "button": {
+              "label": "PRI Decrease 25 steps",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:77",
+            "auto": null,
+            "button": {
+              "label": "PRI Increase 100 steps",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:78",
+            "auto": null,
+            "button": {
+              "label": "PRI Decrease 100 steps",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:17",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:16",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:19",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {}
+          },
+          {
+            "row": 5,
+            "col": 5,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:20",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          },
+          {
+            "row": 6,
+            "col": 3,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:21",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          },
+          {
+            "row": 6,
+            "col": 5,
+            "width": 2,
+            "height": 1,
+            "cid": "10000:22",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null,
+            "led": {
+              "label": null
+            }
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "30000:12",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": {
+              "label": "THERMOCOUPLE 1",
+              "displayMin": "100",
+              "displayMax": "1300"
+            },
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "30000:13",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": {
+              "label": "THERMOCOUPLE 2",
+              "displayMin": "100",
+              "displayMax": "1300"
+            },
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "30000:14",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": {
+              "label": "THERMOCOUPLE 2 - THERMOCOUPLE 3",
+              "displayMin": "0",
+              "displayMax": "1300"
+            },
+            "gaugeradial": null,
+            "trend": null,
+            "led": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "30000:17",
+            "auto": {
+              "label": "PRIMARY O2 SENSOR STATUS"
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "40000:19",
+            "auto": null,
+            "button": null,
+            "dropdown": {
+              "label": null
+            },
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "40000:88",
+            "auto": null,
+            "button": {
+              "label": "ALARM ACKNOWLEDGE",
+              "value": "1"
+            },
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 6,
+            "height": 6,
+            "cid": "30000:20",
+            "auto": null,
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": {
+              "label": "Current Stepper Position Primary",
+              "displayMin": "0",
+              "displayMax": "2000"
+            },
+            "led": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:104",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:105",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:106",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:107",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:121",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 1,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "40000:120",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "width": 2,
+            "height": 2,
+            "cid": "30000:21",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 3,
+            "width": 2,
+            "height": 2,
+            "cid": "30000:25",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 5,
+            "width": 2,
+            "height": 2,
+            "cid": "30000:30",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 1,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:128",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:129",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:130",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:131",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:132",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:133",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:134",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:135",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:136",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 5,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:137",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:138",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 6,
+            "col": 4,
+            "width": 3,
+            "height": 1,
+            "cid": "40000:139",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          }
+        ]
+      },
+      {
+        "units": [
+          {
+            "row": 5,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "40000:86",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "40000:85",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "width": 6,
+            "height": 2,
+            "cid": "40000:84",
+            "auto": {
+              "label": null
+            },
+            "button": null,
+            "dropdown": null,
+            "gaugelinear": null,
+            "gaugeradial": null,
+            "trend": null
+          }
+        ]
+      }
+    ]
+  }
+]
