@@ -1,0 +1,8 @@
+DESCRIPTION OF CHANGE:
+
+Update Software to 2.2. Bug fix for when sharing register 00506 in dual bank to have the left and right bank start controlling at the same time. 
+Updated the Exhaust PID registers to the correct defaults of P=20 I=20 D=0
+
+REASON FOR CHANGE:
+
+When using this feature the right bank would be stuck dithering around the default stepper position.
