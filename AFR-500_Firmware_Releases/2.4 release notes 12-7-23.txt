@@ -1,0 +1,33 @@
+Standard O2 input version
+
+Added running counter that counts from 0-10000 repeatedly (Register 30045) for making sure the modbus is working. 
+Added register 40017 and 40517 for changing the threshold of thermocouple 1 for when the AFR-500 starts controlling. Default is 650 degrees F and allowed range is 200 to 1500 degrees F.
+IP address can now be changed through modbus. 
+Proportional gain is 10 times higher than Rev 2.3. 
+Changed step sequence of stepper motor to not lose steps.
+Grounding Digital Input 3 will now cause an F1 start to reset the stepper and go to the default position. Now allows F1 start when temperature > threshold register (400017, 405017).
+ 
+Fixed modbus writes to 00000's crashing micro.
+
+Added ability to change modbus baud rate (register 40232). Values are 0 = 2400 baud, 1 = 4800 baud, 2 = 9600 baud, 3 = 19200 baud, 4 = 38400 baud, 5 = 115200 baud
+
+
+
+
+
+
+analog in version 
+
+Firmware for analog input 4 to be used as a control input instead of O2. 
+Added running counter that counts from 0-10000 repeatedly (Register 30045) for making sure the modbus is working. 
+Added register 40017 and 40517 for changing the threshold of thermocouple 1 for when the AFR-500 starts controlling. Default is 650 degrees F and allowed range is 200 to 1500 degrees F.
+IP address can now be changed through modbus. 
+Proportional gain is 10 times higher than Rev 2.3. 
+Changed step sequence of stepper motor to not lose steps.
+Grounding Digital Input 3 will now cause an F1 start to reset the stepper and go to the default position. Now allows F1 start when temperature > threshold register (400017, 405017).
+ 
+Fixed modbus writes to 00000's crashing micro.
+
+Added ability to change modbus baud rate (register 40232). Values are 0 = 2400 baud, 1 = 4800 baud, 2 = 9600 baud, 3 = 19200 baud, 4 = 38400 baud, 5 = 115200 baud
+
+
