@@ -1,0 +1,4 @@
+Firmware update 10-11-23
+-	Shutdown input on start up now recognized without unplugging and plugging back in
+-	2 stroke mode, the NO HE signal may light. 
+-	High voltage warnings with no high voltage numbers above threshold
