@@ -2,3 +2,15 @@ Firmware update 10-11-23
 -	Shutdown input on start up now recognized without unplugging and plugging back in
 -	2 stroke mode, the NO HE signal may light. 
 -	High voltage warnings with no high voltage numbers above threshold
+
+
+Firmware update 1-9-2024
+  - Only to be used with CM4 version 1.4 release candidate
+  - This was actually done first but released second
+  - Offers individual timing
+  - fixes an issue with the gear teeth not divisible by 10
+
+Firmware update 1-26-24
+  - Only to be used with the released version of the CM4 1.1
+  - This is an update without the individual timing for a more stable test that we had to perform and did not want individual timing that was not tested causing issues
+  - has the gear tooth not divisibile by 10 fix
