@@ -1,0 +1,19 @@
+11-2-23 version 1.1
+Works with firmware 10-11-23
+-	Added ability to work with Ethernet IP directly or using MOD+
+-	Added support for Ethernet-IP  to iris_go gateway
+-	Added ability to configure eth0 network interface with custom IP address
+-	Bridged Eth1 and Eth2 interfaces so that they can both be used for 192.168.1.2 ip address
+-	Fixed raspberry pi log in screen that would show up sometimes at power up
+
+
+2-13-2024 version 1.4 RC
+This only works with ST firmware 1-9-2024. 
+
+Main Updates
+  - Fixed the B timing loop to be 36 degrees not 32 degrees
+  - Fixes the config pattern for X4L type patterns
+  - All text is black not mixed grey/black
+  - Adds new style gages 
+  - Adds the ability for color enumeration on gages to use other keys
+  - With the color enumeration, overspeed key is used on gage on display

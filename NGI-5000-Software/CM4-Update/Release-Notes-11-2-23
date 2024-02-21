@@ -1,8 +1,0 @@
-11-2-23
-Works with firmware 10-11-23
--	Added ability to work with Ethernet IP directly or using MOD+
--	Added support for Ethernet-IP  to iris_go gateway
--	Added ability to configure eth0 network interface with custom IP address
--	Bridged Eth1 and Eth2 interfaces so that they can both be used for 192.168.1.2 ip address
--	Fixed raspberry pi log in screen that would show up sometimes at power up
-
