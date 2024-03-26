@@ -24,3 +24,4 @@ Main Updates
   - Adds new style gages 
   - Adds the ability for color enumeration on gages to use other keys
   - With the color enumeration, overspeed key is used on gage on display
+  -	Added updater progress screen and feedback to the user when performing software update
