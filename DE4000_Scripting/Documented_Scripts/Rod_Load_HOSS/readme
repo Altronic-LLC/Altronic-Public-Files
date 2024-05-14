@@ -1,0 +1,17 @@
+Description: Rod Load Hoss
+    Copy entire code to the bottom of MASTER script. The default program is set up for 5 stage.
+    If you need only 3 stages, you first go into the first section of the "if not Rod_Load_FS", and 
+    delete the create_param section of the stages not needed. The second step is go to the bottom
+    of the rod load code and remove the function call Rodload(x) of the stages not being used. After 
+    those two steps are completed, the Hos Rod Load is setup in script. The user then would need to save This
+    script into the MASTER script, and set up the user parameters, from the "HMI" "PARAMS" section for the inputs 
+    and constant variables needed for the calculations to execute correctly
+    * Each Stage must have an input for the following
+        - Suction Pressure
+        - Discharge Pressure
+
+
+Rev 1.0 - Initial Release 5/09/2024
+
+
+Code Reference:

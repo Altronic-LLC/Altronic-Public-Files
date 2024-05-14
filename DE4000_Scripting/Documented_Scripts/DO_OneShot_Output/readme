@@ -1,0 +1,15 @@
+Description: Creating a OneShot Output for a Digital Output
+
+Rev 1.0 - Initial Release 4/24/2024
+
+
+Code Reference:
+----------------------------
+-- Digital Output ONESHOT Function --
+-- Output_Terminal = Terminal Board Number For Digital Output
+-- Output_Number = Output Number For The Digital Output
+-- Input = Variable Name Used In Master Script Logic
+----------------------------
+DigitalOutput_OneShot(Output_Terminal,Output_Number,Input)
+
+DigitalOutput_OneShot(1,3,Bypass_Output_Cmd) -- Example  1 = Output_Terminal, 3 = Output_Number, Bypass_Output_Cmd = Input (Variable Name Used In Master Script Logic)

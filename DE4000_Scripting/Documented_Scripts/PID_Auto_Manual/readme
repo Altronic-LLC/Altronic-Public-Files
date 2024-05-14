@@ -1,0 +1,17 @@
+Description: From the "GLOBAL", "PID" screens, the user can have manual or automatic control of any PID.
+
+Rev 1.0 - Initial Release 5/09/2024
+
+
+Example Code:
+----------------------------
+-- PID Auto/Manual Control --
+-- Name = User Defined Name for the PID to control - MUST ENTER NAME IN QUOTATIONS
+-- PID_Number = From the "GLOBAL","PID" page, enter the PID for control
+-- Increment = Enter the amount to increase and decrease the setpoint with the up/down arrows while in manual mode.
+----------------------------
+ManAutoButton(Name,PID_Number,Increment)
+
+ManAutoButton("Suction",1,5) -- This example: "Suction" = Name (User Enterable), 1 = PID_Number (From "Global","PID" page), 5 = Increment (Amount for up and down arrows in manual mode)
+
+
