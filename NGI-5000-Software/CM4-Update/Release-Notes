@@ -3,8 +3,6 @@ For information on updating the NGI-5000 software
 https://www.altronic-llc.com/documentation/ngi-5000/operating-instructions/
 Section 10 Updating software
 
-
-
 11-2-23 version 1.1
 Works with firmware 10-11-23
 -	Added ability to work with Ethernet IP directly or using MOD+
@@ -25,3 +23,14 @@ Main Updates
   - Adds the ability for color enumeration on gages to use other keys
   - With the color enumeration, overspeed key is used on gage on display
   -	Added updater progress screen and feedback to the user when performing software update
+
+6-12-24 version version 2.0.0 RC1
+  This only works with ST firmware 6-12-2024
+
+Main Updates
+  - Added warning LEDs for Low Voltage Recharge Bank A, Low Voltage Recharge Bank B to top screen.
+  - Added fault LED for Misaligned CAM HE to top screen
+  - Added "TRYING" state to Engine Status on top screen
+  - Added "TRYING with Alarms" and "FIRING with Alarms" to engine state (background is yellow) when there are Alarms active on top screen
+  - Added Discharge and Recharge screen under Warnings screen
+  - Added ability for the ST to know whether it is a NGI-5000 legacy system or a NGI-5000 system from engine config tool
