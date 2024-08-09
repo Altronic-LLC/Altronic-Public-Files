@@ -19,3 +19,10 @@ Firmware update 1-26-24
   - Only to be used with the released version of the CM4 1.1
   - This is an update without the individual timing for a more stable test that we had to perform and did not want individual timing that was not tested causing issues
   - has the gear tooth not divisibile by 10 fix
+
+Firmware update 8-5-2024
+- Changed the file name to use the yyyymmdd format in the name (20240805) 
+    This allows for names to be in a ascending or descending order on your PC or thumb drive
+- Only to be used with the released version of the CM4 1.1
+- Adds filtering for the 4-20mA tha deglitches the alarm output and has to see a 4-20 signal drop out for 1 second before setting the alarm output
+
