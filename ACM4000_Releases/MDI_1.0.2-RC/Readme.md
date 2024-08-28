@@ -1,14 +1,35 @@
-## Latest Release Candidate: [MDI 1.0.2-RC2](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC2.atf)
-
+# Latest Release Candidate: [MDI 1.0.2-RC4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC4.atf)
 **Important:**  
-If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.
+**If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
+
+
+### Changelog:
+
+#### Fixes:
+- **Datalogging:** Fixed an issue where Influx would not datalog registers with labels that contain certain characters like `, )` etc.
+- **TCP:** Fixed an issue where the PLC+ devices TCP connection would not be closed upon IP change and importing a new config.
+- **Import Config:** Fixed an issue where the import config would sometimes cause the file containing the ethernet config to write values twice, causing that port to have no IP address.
+
+#### Quality of Life (QOL) Improvements:
+- **Gateway Logs:** Removed some non-required logging to improve performance and storage.
+
+This release includes all the changes from the previous release candidates.
+
+# 1.0.2-RC3: [MDI 1.0.2-RC3](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC3.atf)
+
+### Changelog:
+
+#### Quality of Life (QOL) Improvements:
+- **Operating System:** Removed Linux boot up command line text when powering the unit.
+
+# 1.0.2-RC2: [MDI 1.0.2-RC2](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC2.atf)
 
 ### Changelog:
 
 #### Fixes:
 - **Trending Updates:** Resolved an issue where trending data would not update while connected via Ethernet unless the page was refreshed or reopened.
 - **UI Layout:** Corrected an issue where the overlay and stack buttons on the trending screen occasionally wrapped to the next line.
-- **Nginx Configuration:** Fixed an issue where the Nginx config would not update during installation, but would update on first provision.
+- **Nginx Configuration:** Fixed an issue where the Nginx config would not update during installation but would update on first provision.
 - **Push Config:** Fixed an issue where the push config would be overridden on the HMI when first pulling data.
 - **CSV Export:** Fixed an issue where labels for the full export were not appearing at the top of the CSV file.
 - **Trending Lag:** Fixed an issue where trending seemed to lag for a second or two during batch writes to the database. Data now writes immediately.
@@ -21,11 +42,10 @@ If you're installing this on a system running a version earlier than 1.0.2-RC1, 
 - **Chart Naming:** Added the ability to name charts directly on the trending screen.
 
 
-# 1.0.2-RC1 Release Candidate #
-[MDI 1.0.2-RC1 Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC1.atf)
+# 1.0.2-RC1: [MDI 1.0.2-RC1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC1.atf)
 
-**Note:** When installing this on the system, change the name of this file to mdi-1.0.2.atf. Otherwise, the system will not recognize the update file. This issue has been fixed in this release.
+**Note:** When installing this on the system, change the name of this file to `mdi-1.0.2.atf`. Otherwise, the system will not recognize the update file. This issue has been fixed in this release.
 
 **Changelog:**
 - Fixed an issue where if DE-4000 Timezone was not 0 or the default, it would cause the system storage to fill up (similar to the browser refresh issue on the DE-4000).
-- Fixed an issue where the update process did not recognize an mdi-X.X.X-RCX file and would only recognize mdi-1.0.1.
+- Fixed an issue where the update process did not recognize an `mdi-X.X.X-RCX` file and would only recognize `mdi-1.0.1`.
