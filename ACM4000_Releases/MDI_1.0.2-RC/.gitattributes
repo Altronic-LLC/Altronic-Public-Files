@@ -2,3 +2,4 @@ mdi-1.0.2-RC1.atf filter=lfs diff=lfs merge=lfs -text
 mdi-1.0.2-RC2.atf filter=lfs diff=lfs merge=lfs -text
 mdi-1.0.2-RC4.atf filter=lfs diff=lfs merge=lfs -text
 mdi-1.0.2-RC3.atf filter=lfs diff=lfs merge=lfs -text
+mdi-1.0.2-RC5.atf filter=lfs diff=lfs merge=lfs -text

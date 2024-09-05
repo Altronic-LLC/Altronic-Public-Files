@@ -1,7 +1,19 @@
-# Latest Release Candidate: [MDI 1.0.2-RC4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC4.atf)
+# Latest Release Candidate: [MDI 1.0.2-RC5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC5.atf)
 **Important:**  
 **If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
 
+### Changelog:
+
+#### Fixes:
+- **UI Layout:** Fixed an issue where the hamburger button would not scale properly with the DE-4000 on certain resolutions like the 8" TruVu.
+- **Networking:** Fixed and issue when updating the main device to wait for nginx server to restart.
+
+#### New Features:
+- **Screen Sleep Timer:** Added the ability to set a timer for the HMI to go to sleep in minutes. 0 will set this to never go to sleep.
+
+This release includes all the changes from the previous release candidates.
+
+# 1.0.2-RC3: [MDI 1.0.2-RC4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC4.atf)
 
 ### Changelog:
 
@@ -13,7 +25,6 @@
 #### Quality of Life (QOL) Improvements:
 - **Gateway Logs:** Removed some non-required logging to improve performance and storage.
 
-This release includes all the changes from the previous release candidates.
 
 # 1.0.2-RC3: [MDI 1.0.2-RC3](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC3.atf)
 
