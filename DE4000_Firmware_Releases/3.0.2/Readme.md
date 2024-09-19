@@ -1,11 +1,6 @@
-# Latestest Release #
-
-[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.2/3.0.2.zip)
-[3.0.2 Bootloader Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.2/bootloader_3.0.2.zip)
-
 # Release Notes #
 
-[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.2/3.0.2.zip)
+[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.2.zip)
 
 - SOM: Fixed an issue where the Timers would not arm when using a 4-20mA channel as RPM.
 
@@ -42,3 +37,4 @@
 - CONTROLLER: Corrected a problem where the system was faulting in low setpoint Cooldown mode even when the cooldown box was enabled.
 
 - CONTROLLER: Fixed issue where calibration on 4-20mA channel as RPM would not affect the engine RPM.
+
