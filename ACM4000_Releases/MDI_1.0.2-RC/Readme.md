@@ -1,3 +1,18 @@
+# Latest Release Candidate: [MDI 1.0.2-RC6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC6.atf)
+**Important:**  
+**If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
+
+### Changelog:
+
+#### Fixes:
+- **Trending:** Fixed an issue where if the labels are very large, the dropdown would wrap to the next line hiding certain buttons on the DE-4000.
+
+#### Quality of Life (QOL) Improvements:
+- **Main Device:** Added Main device refresh message if device is not connected for any reason. 
+- **Networking:** Added Static IP Address to the Ethernet Settings.
+- **Main Device:** Added a Message for the device if there are no ethernet ports specified in the same subnet as the device's IP Address.
+
+This release includes all the changes from the previous release candidates.
 # Latest Release Candidate: [MDI 1.0.2-RC5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC5.atf)
 **Important:**  
 **If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
@@ -10,8 +25,6 @@
 
 #### New Features:
 - **Screen Sleep Timer:** Added the ability to set a timer for the HMI to go to sleep in minutes. 0 will set this to never go to sleep.
-
-This release includes all the changes from the previous release candidates.
 
 # 1.0.2-RC3: [MDI 1.0.2-RC4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC4.atf)
 
