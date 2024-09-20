@@ -42,3 +42,11 @@
 - CONTROLLER: Corrected a problem where the system was faulting in low setpoint Cooldown mode even when the cooldown box was enabled.
 
 - CONTROLLER: Fixed issue where calibration on 4-20mA channel as RPM would not affect the engine RPM.
+
+## Latest Release Candidate: [3.0.3-RC1 Bootloader Firmware](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.3-RC/bootloader_3.0.3-RC1.atf)
+
+### Changelog:
+
+#### Bug Fixes:
+- **PID Override:** Fixed an issue with the new PID override feature where if the ramp is lower than 1 and there are states being actively overridden, the PID would not ramp to the target value.
+- **PID UI:** Fixed an issue in the PID UI where there was a red scrollbar at the bottom of the screen.
