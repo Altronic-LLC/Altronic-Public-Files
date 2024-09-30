@@ -10,13 +10,14 @@
 - Fix: Fixed an issue where if there is no data on the Data Explorer it would show a Blank Gray screen.
 - Fix: Removed Redis bind from 98.102.65.175 to just localhost (this caused an issue if there was power loss while writing eth0, if 98.102.65.175 was not defined it could not run the network config script)
 
-## Latest Release Candidate: [MDI 1.0.2-RC6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC6.atf)
+## Latest Release Candidate: [MDI 1.0.2-RC7](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.2-RC7.atf)
 **Important:**  
 **If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
 
 ### Changelog:
 
 #### Fixes:
+- **TCP (RC7):** Fixed an issue where the port 502 override for TCP devices did not save properly.
 - **Trending (RC6):** Fixed an issue where if the labels are very large, the dropdown would wrap to the next line hiding certain buttons on the DE-4000.
 - **UI Layout (RC5):** Fixed an issue where the hamburger button would not scale properly with the DE-4000 on certain resolutions like the 8" TruVu.
 - **Networking (RC5):** Fixed an issue when updating the main device to wait for nginx server to restart.
@@ -33,6 +34,7 @@
 - **Timezone (RC1):** Fixed an issue where if DE-4000 Timezone was not 0 or the default, it would cause the system storage to fill up (similar to the browser refresh issue on the DE-4000).
 
 #### Quality of Life (QOL) Improvements:
+- **Trending (RC7):** Added Chart type(Stacked or Overlay) to be stored in config. The last chart type is remembered when selecting charts.
 - **Main Device (RC6):** Added Main device refresh message if device is not connected for any reason. 
 - **Networking (RC6):** Added Static IP Address to the Ethernet Settings.
 - **Main Device (RC6):** Added a Message for the device if there are no ethernet ports specified in the same subnet as the device's IP Address.
