@@ -9,9 +9,10 @@
 
 #### Quality of Life (QOL) Improvements:
 - **CM4:** Added Datalogging for CM4 Temperature, CPU Usage, CPU Clock, and System Ram.
-- **Temperature:** Added Graphic for CM4 Temperature this will show you the current temperature in C or F. ![Temperature](TemperatureImage.png)
-- **RTU:** Added the ability to set Parity, Data Bits, and Stop Bits for RS-485 Ports.
-![alt text](RS-485.png)
+- **Temperature:** Added Graphic for CM4 Temperature this will show you the current temperature in C or F.  
+    ![Temperature](TemperatureImage.png)
+- **RTU:** Added the ability to set Parity, Data Bits, and Stop Bits for RS-485 Ports.  
+    ![alt text](RS-485.png)
 - **RTU:** Set Defaults to baud rates for RS-485 1 at 9600 baud and RS-485 2 at 38400 baud instead of empty selections.
 - **QOL-GENERAL:** Removed non-required browser console logging.
 - **Gateway Caching:** Changed Cache time from 500ms to 1s to speed up networking when using multiple browsers. 
