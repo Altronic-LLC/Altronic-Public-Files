@@ -3,10 +3,43 @@ For information on updating the NGI-5000 software
 https://www.altronic-llc.com/documentation/ngi-5000/operating-instructions/
 Section 10 Updating software
 
-1-21-25 Version 2.0.4 (RC)
+20250120 Version 2.0.4 (RC)
 
 - Fixed MODBUS issue and made baud rate and node selectable
 - Used with ST firmware 2.0.0 and greater
+
+20240920 Version 2.0.3 
+ - Official release
+ - 2.0.0 - 2.0.2 RC only
+ - Works with ST firmware 2.0.0
+- Incorporates Legacy mode operation for the CPU-2000
+- Incorporates Full System mode for NGI-5000 operation
+- Index page at 192.168.1.2 is now updated to offer many new features
+     	Open to a landing page
+	Communications adjustment
+	Ability to adjust wifi
+	Ability to set gigbit port IP address
+	Engine configuration
+	Selecting NGI-5000 or CPU-2000 will determine how the device is programmed
+	Cylinder labels active and will display on module
+	Bootloader updates 
+	Requires no USB drive
+	Logic CM4
+	Logic ST
+	CIU’s
+- Banner at top of display to show legacy or full system mode
+-CIU screens were added
+	Configuration
+	Monitoring
+	Diagnostics
+-Power Screen added
+	Can turn on or off each primary voltage supply
+	Can reset e-fuse
+
+	
+
+
+
 
 6-12-24 version version 2.0.0 RC1
   This only works with ST firmware 6-12-2024
