@@ -2,6 +2,10 @@ For information on updating the NGI-5000 software
 https://www.altronic-llc.com/documentation/ngi-5000/operating-instructions/
 Section 10 Updating software
 
+Firmware update 20250214
+Version 2.0.1
+- Attempt to fix the missing reset output and a missing firing cycle (except the last firing) by not clearing the flags of a timer interrupt. 
+- Because of the extra firing that would occur, this also attempts to fix the alarm "NO DISCHARGE" on a cylinder that is non-existent or past the firing pattern.
 
 Firmware update 20240920
 Version 2.0.0
