@@ -10,7 +10,7 @@ Zip file transfered to desktop of NGI-5000 logic still zipped, unzip and double 
 
 
 
-20250120 Version 2.0.4 (RC)
+20250120 Version 2.0.4 (RC) Promoted to Final
 
 - Fixed MODBUS (was not operational in 2.0.3) and made baud rate and node selectable
 - Used with ST firmware 2.0.0 and greater
