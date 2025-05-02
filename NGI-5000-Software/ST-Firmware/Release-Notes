@@ -2,6 +2,13 @@ For information on updating the NGI-5000 software
 https://www.altronic-llc.com/documentation/ngi-5000/operating-instructions/
 Section 10 Updating software
 
+Firmware update 20250425 Promoting from RC to final
+Version 2.0.2
+- Only to be used with 2.0.3 and later CM4
+- ST micro firmware change for allowing Logic Module to go into firing state when in Legacy Mode and advanced feature bank cut-off is active.
+	- There was an issue in the field that the Logic Module would not go into firing state when in Legacy Mode and 
+	the miscellaneous input was used for bank cut-off. The logic module would stay in the “Trying” state.
+
 Firmware update 20250214 Promoting from RC to final
 Version 2.0.1
 - -Only to be used with 2.0.3 and later CM4
