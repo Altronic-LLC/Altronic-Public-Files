@@ -1,6 +1,9 @@
 For information on updating the NGI-5000 software 
 https://www.altronic-llc.com/documentation/ngi-5000/operating-instructions/
 Section 10 Updating software
+Two versions of the ST firmware exist. 1.4.X and 2.x.x. The 1.4 versions are for when legacy only modules existed
+and has only been maintained up to critical bug fixes for anyone not moving to the 2.x.x firmware.
+2.x.x offers some additional features and the capability for NGI-5000 full system functionality. 
 
 Firmware update 20250425 Promoting from RC to final
 Version 2.0.2
