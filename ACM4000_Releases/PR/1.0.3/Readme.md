@@ -1,4 +1,4 @@
-# Latest Release Candidate: [MDI 1.0.3-PR1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-RC/mdi-1.0.3-PR1.atf)
+# Latest Release Candidate: [MDI 1.0.3-PR1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.0.3/mdi-1.0.3-PR1.atf)
 **Important:**  
 **If you're installing this on a system running a version earlier than 1.0.2-RC1, please rename the file to `mdi-1.0.2.atf`. This ensures the system will recognize the update file. This naming issue has been resolved in this release.**
 

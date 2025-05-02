@@ -1,4 +1,4 @@
-## Latest Release : [MDI 1.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.1-Final/mdi-1.0.1.atf)
+## Latest Release : [MDI 1.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.1/mdi-1.0.1.atf)
 
 
 **1.0.1 Changelog:**

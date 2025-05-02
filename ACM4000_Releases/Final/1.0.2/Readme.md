@@ -1,20 +1,3 @@
-## Overview
-
-The **MDI 1.0.0 Initial Field Image** provides the complete system image required to install the operating system and MDI interface on the Compute Module 4 (CM4). This image is intended for **first-time installations** or **full re-imaging** of the device.
-
-The **MDI 1.0.2 Firmware Release** is a **USB update package** designed to upgrade the firmware of devices that **already have the 1.0.0 image installed**. Use this release to apply the latest fixes, quality of life improvements, and new features without re-imaging the device.
-
-### When to Use:
-- **MDI 1.0.0 Initial Field Image**:  
-  - Use when setting up the CM4 for the first time or when performing a full system reinstallation.  
-  - [Download the image here](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.0-Image/MDI_1.0.0.zip)
-
-- **MDI 1.0.2 Firmware Release**:  
-  - Use this if your system is **already running MDI 1.0.0** and needs to be updated with the latest firmware improvements.  
-  - Apply this update via **USB** without needing to re-image the system.  
-  - [Download the firmware here](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-Final/mdi-1.0.2.atf).
-
-
 ## Latest Release : [MDI 1.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/mdi-1.0.2.atf)
 
 <details>
@@ -52,25 +35,3 @@ The **MDI 1.0.2 Firmware Release** is a **USB update package** designed to upgra
   - **Chart Naming (RC2):** Added the ability to name charts directly on the trending screen.
 
 </details>
-
-
-## Initial 1.0.0 Field Image : [MDI 1.0.0 Image Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.0-Image/MDI_1.0.0.zip)
-
-<details>
-  <summary><h3>📋 1.0.0 Changelog (Click to expand)</h3></summary>
-
-  - Added selectable datalogging interval.
-  - Added selectable DE4000 Time Zone.
-  - Added Push & Pull config to the Altronic Data Explorer.
-  - Fixed an issue where when changing the layout the DE-4000 would not load and would have to reboot.
-  - Added network initialization on startup (in case of power loss during configuration).
-
-</details>
-
-
-# Documentation #
-[ACM Imaging Instructions](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-imaging-guide/)
-
-[MDI Documentation](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-multi-device-interfacemdi-manual/)
-
-
