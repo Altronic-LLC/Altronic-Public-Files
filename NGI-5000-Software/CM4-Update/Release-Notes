@@ -7,6 +7,11 @@ Updating anything from 1.4.X to 2.X.X requires reimaging the CM4
 Updating 1.4.X to 1.4.Y means using the old way of updating the CM4 and instructions are in literature
 Zip file transfered to desktop of NGI-5000 logic still zipped, unzip and double click the .sh file. 
 
+Inside the Final folder are three different files. 
+2.0.3.zip is the image that can be used when going from 1.4.x to the newer platform
+2.0.X.deb is the latest package, and if using anything 2.0.x can be used through the package manager
+1.4.x.zip is the last release available using the old way of updating the CM4
+
 
 
 
