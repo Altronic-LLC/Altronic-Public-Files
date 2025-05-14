@@ -1,3 +1,8 @@
+Firmware update 20250514 RC
+Version 2.0.4
+- Only to be used with 2.0.3 and later CM4
+- Removed setting of alarm output when Hall Effect occurs without a reset
+
 Firmware update 20250512 RC
 Version 2.0.3
 - Only to be used with 2.0.3 and later CM4
