@@ -1,6 +1,6 @@
-# [MDI 1.1.8-PR](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.8/mdi-1.1.8-RC.atf)
+# [MDI 1.1.8-RC](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.8/mdi-1.1.8-RC.atf)
 
-### Changelog:
+### Changelog Since Last Release Candidate:
 
 #### Quality of Life Changes:
 

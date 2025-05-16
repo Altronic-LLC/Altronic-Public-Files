@@ -1,3 +1,14 @@
+# [MDI 1.1.8-RC](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.8/mdi-1.1.8-RC.atf)
+
+### Changelog:
+
+#### Quality of Life Changes:
+
+#### Bug Fixes:
+- **Data Explorer/Trending:** Fixed an issue where the Trending backend would still reference the 98.102.65.174 IP address when using a seperate IP address for the DE-4000
+
+---
+
 # [MDI 1.1.7-RC](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.7/mdi-1.1.7-RC.atf)
 
 ### Changelog Since Last Release Candidate:
@@ -13,7 +24,9 @@
 - **RS-485 Timout:** Lowered Timeout for RS-485 failed request from 2 seconds to 1 second due to impact on polling other devices on the bus.
 - **CM4:** Added Datalogging for CM4 Temperature, CPU Usage, CPU Clock, and System Ram.
 - **Temperature:** Added Graphic for CM4 Temperature this will show you the current temperature in C or F.  
+    ![Temperature](TemperatureImage.png)
 - **RTU:** Added the ability to set Parity, Data Bits, and Stop Bits for RS-485 Ports.  
+    ![alt text](RS-485.png)
 - **RTU:** Set Defaults to baud rates for RS-485 1 at 9600 baud and RS-485 2 at 38400 baud instead of empty selections.
 - **QOL-GENERAL:** Removed non-required browser console logging.
 - **Gateway Caching:** Changed Cache time from 500ms to 1s to speed up networking when using multiple browsers. 

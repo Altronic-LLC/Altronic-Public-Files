@@ -1,16 +1,4 @@
-# Overview
-
-## Final Release Folder
-  - The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.
-  ### When to Use:
-  - Use this release to apply the latest fixes, quality of life improvements, and new features while ensuring stability. This is the new baseline version.
-  ### Applicable Links:
-  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2)
-  - [Click here to see latest final release (MDI 1.0.2 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/)
-  - [Click here to download latest final release (MDI 1.0.2 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/mdi-1.0.2.atf?download=)
-  ### Change Log:
-  <details>
-  <summary><h3>📋 1.0.2 Changelog (Click to expand)</h3></summary>
+## [MDI 1.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/mdi-1.0.2.atf)
 
   ### Fixes:
   - **TCP (RC7):** Fixed an issue where the port 502 override for TCP devices did not save properly.
@@ -43,42 +31,20 @@
   - **Screen Sleep Timer (RC5):** Added the ability to set a timer for the HMI to go to sleep in minutes. 0 will set this to never go to sleep.
   - **Chart Naming (RC2):** Added the ability to name charts directly on the trending screen.
 
-</details>
-
 ---
 
-## Release Candidate Folder
-  - A release candidate (RC) is a pre-release version of software that is considered nearly ready for final distribution. It has undergone significant testing and includes all planned features and bug fixes, but may still require minor tweaks or validation before the official stable release.
-  ### When to Use:
-  - A staging software version intended for **application testing**.
-  ### Applicable Links:
-  - [Click here to see release candidates](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/)
+## [MDI 1.0.1 Final Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Archive/1.0.1/mdi-1.0.1.atf)
 
----
+**Now Archived**
 
-## Preview Release Folder
-  - A preview release is an early version of software made available to users before the official stable release. It showcases new features, improvements, or changes for testing and feedback, but may contain bugs or incomplete elements. Often called a beta or developer preview.
-  ### When to Use:
-  - it’s intended for evaluation and not for critical use. **Not to be used in the field**,
-  ### Applicable Links:
-  - [Click here to see preview releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/)
+**1.0.1 Changelog:**
+- Feature: Add key bind Alt+F4 to exit browser.
+- Feature: Add key bind Ctrl+Alt+T to open Terminal.
+- Fix: Fix issue where HDMI 2 did not duplicate HDMI 1
+- Fix: Ensure Redis & Nginx are started before running processes.
+- Fix: Fixed an issue where the Data Explorer showed Push/Pull on HMI.
+- Fix: Fixed an issue where if there is no data on the Data Explorer it would show a Blank Gray screen.
+- Fix: Removed Redis bind from 98.102.65.175 to just localhost (this caused an issue if there was power loss while writing eth0, if 98.102.65.175 was not defined it could not run the network config script)
 
----
-
-## MDI 1.0.0 Field Image
-  - The **MDI 1.0.0 Initial Field Image** provides the complete system image required to install the operating system and MDI interface on the Compute Module 4 (CM4). This image is intended for **first-time installations** or **full re-imaging** of the device.
-
-  ### When to Use:
-  - Use when **setting up the CM4 for the first time** or when performing a full system reinstallation.  
-
-  ### Applicable Links:
-  - [Click here to view the MDI 1.0.0 Field Image](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.0-Image/MDI_1.0.0.zip)
-  - [Click here to download MDI 1.0.0 Field Image](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.0-Image/MDI_1.0.0.zip?download=)
-  ---
-
-# Documentation #
-[ACM Imaging Instructions](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-imaging-guide/)
-
-[MDI Documentation](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-multi-device-interfacemdi-manual/)
 
 
