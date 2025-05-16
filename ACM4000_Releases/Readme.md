@@ -12,7 +12,7 @@ The **MDI 1.0.2 Firmware Release** is a **USB update package** designed to upgra
 - **MDI 1.0.2 Firmware Release**:  
   - Use this if your system is **already running MDI 1.0.0** and needs to be updated with the latest firmware improvements.  
   - Apply this update via **USB** without needing to re-image the system.  
-  - [Download the firmware here](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/MDI_1.0.2-Final/mdi-1.0.2.atf).
+  - [Download the firmware here](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/mdi-1.0.2.atf).
 
 
 ## Latest Release : [MDI 1.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.0.2/mdi-1.0.2.atf)
