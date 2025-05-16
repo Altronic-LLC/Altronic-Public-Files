@@ -16,6 +16,19 @@ A **Pre-Release Candidate (PR)** version is an early release of software intende
 ---
 ## Preview Release Change Log
 
+## [MDI 1.1.11-PR](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.11/mdi-1.1.11.atf)
+
+### Changelog:
+
+#### Bug Fixes:
+- **Time Synchronization:** Fixed an issue where the ACM-4000 would not update its time with the DE-4000
+
+## Where To Find This Release
+
+### ACM-4000 bootloader update version 1.1.10
+
+[MDI 1.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.10/mdi-1.1.10.atf)
+
 ## [MDI 1.1.10-PR](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.10/mdi-1.1.10.atf)
 
 ### Changelog:
