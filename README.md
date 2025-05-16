@@ -1,4 +1,4 @@
-# Altronic Public Firmware Repository
+# Altronic Public Files Repository
  
 Welcome to the public firmware repository for Altronic, LLC.
  
