@@ -1,4 +1,4 @@
-# [MDI 1.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.9/mdi-1.1.10.atf)
+# [MDI 1.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.10/mdi-1.1.10.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -30,7 +30,7 @@ This software is not for sale or general distribution.
 
 ### ACM-4000 bootloader update version 1.1.10
 
-[MDI 1.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.9/mdi-1.1.10.atf)
+[MDI 1.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.10/mdi-1.1.10.atf)
 
 ## Update Instructions
 

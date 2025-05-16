@@ -34,7 +34,7 @@ This software is not for sale or general distribution.
 
 ### For ACM-4000 with MDI Already Installed
 
-1. **Download MDI 1.1.9**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/1.1.10/mdi-1.1.9.atf?download=)
+1. **Download MDI 1.1.9**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/1.1.9/mdi-1.1.9.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000
