@@ -1,6 +1,6 @@
 # Release Notes #
 
-[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.2.zip)
+[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.2.zip)
 
 - SOM: Fixed an issue where the Timers would not arm when using a 4-20mA channel as RPM.
 

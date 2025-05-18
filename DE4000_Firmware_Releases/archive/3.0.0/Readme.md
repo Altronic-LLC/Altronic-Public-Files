@@ -1,4 +1,4 @@
-[3.0.0 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.0/3.0.0.zip)
+[3.0.0 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.0/3.0.0.zip)
 
 - SOM: Updated the switch setting pictures on the Channels page to match the new terminal board switch settings.
 

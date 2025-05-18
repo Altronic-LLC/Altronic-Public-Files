@@ -1,5 +1,5 @@
-[3.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.1/3.0.1.zip)
-[3.0.1 Bootloader Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/3.0.1/bootloader_3.0.1.zip)
+[3.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.1/3.0.1.zip)
+[3.0.1 Bootloader Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.1/bootloader_3.0.1.zip)
 
 - NOTE: This release has an issue when using a 4-20mA channel as RPM that causes timers to not arm.
 
