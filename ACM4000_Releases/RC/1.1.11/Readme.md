@@ -1,4 +1,4 @@
-# [MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.11/mdi-1.1.11.atf)
+# [MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.11/mdi-1.1.11.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -7,7 +7,7 @@
 > Girard, Ohio 44420  
 > United States of America
 
-## Release Kind: Pre-Release
+## Release Kind: Release Candidate
 
 For demonstration and shakedown. May contain incomplete features, 
 bugs of various severity.
@@ -28,13 +28,13 @@ This software is not for sale or general distribution.
 
 ### ACM-4000 bootloader update version 1.1.11
 
-[MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.11/mdi-1.1.11.atf)
+[MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.11/mdi-1.1.11.atf)
 
 ## Update Instructions
 
 ### For ACM-4000 with MDI Already Installed
 
-1. **Download MDI 1.1.11**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/1.1.11/mdi-1.1.11.atf?download=)
+1. **Download MDI 1.1.11**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/RC/1.1.11/mdi-1.1.11.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000

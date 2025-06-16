@@ -16,7 +16,9 @@ A **Pre-Release Candidate (PR)** version is an early release of software intende
 ---
 ## Preview Release Change Log
 
-## [MDI 1.1.11-PR](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/1.1.11/mdi-1.1.11.atf)
+## [MDI 1.1.11-PR](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.1.11/mdi-1.1.11.atf)
+
+**Upgraded to Release Candidate**
 
 ### Changelog:
 
