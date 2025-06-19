@@ -26,6 +26,7 @@
   - **Operating System (RC3):** Removed Linux boot up command line text when powering the unit.
   - **SD Card Safeguards (RC2):** Added additional safeguards to protect against SD card corruption.
   - **Device Naming (RC2):** Modified the device name in InfluxDB to use unique names without relying on unique IDs. Device names will now auto-increment if needed. Note: This change will automatically update charts on the HMI, but charts stored in your browser will need manual updates.
+  - **Time Synchronization:** Fixed an issue where the ACM-4000 would not update its time with the DE-4000
 
   ### New Features:
   - **Screen Sleep Timer (RC5):** Added the ability to set a timer for the HMI to go to sleep in minutes. 0 will set this to never go to sleep.

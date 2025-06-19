@@ -7,6 +7,7 @@
 > Girard, Ohio 44420  
 > United States of America
 
+*Upgraded to Final Release*
 ## Release Kind: Release Candidate
 
 For demonstration and shakedown. May contain incomplete features, 
