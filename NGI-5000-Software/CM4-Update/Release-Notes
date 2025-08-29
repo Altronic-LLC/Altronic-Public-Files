@@ -13,6 +13,10 @@ Inside the Final folder are three different files.
 1.4.x.zip is the last release available using the old way of updating the CM4
 
 
+20250829 Version 2.1.0 (PR)
+Adding preview release for a firing pattern for LSV 12 cylinder that is an X8L. This was listed as X4L and a special pattern and was not able to be selected. It also followed the CPUII convention and still had X4L. This LSV has 2 plugs per cylinder with a firing pattern of 4-36-4-80 as a 4 stroke
+
+
 
 
 20250120 Version 2.0.4 (RC) Promoted to Final
