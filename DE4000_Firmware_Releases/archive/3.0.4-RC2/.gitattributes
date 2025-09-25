@@ -1,0 +1,9 @@
+bootloader_3.0.4-RC1.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC2.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC7.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC8.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC9.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC10.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC11.atf filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC12 filter=lfs diff=lfs merge=lfs -text
+bootloader_3.0.4-RC12.atf filter=lfs diff=lfs merge=lfs -text

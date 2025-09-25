@@ -5,14 +5,14 @@
   ### When to Use:
   - Use this release to apply the latest fixes, quality of life improvements, and new features while ensuring stability. This is the new baseline version.
   ### Applicable Links:
-  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.1.11)
-  - [Click here to see latest final release (MDI 1.1.11 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.1.11/)
-  - [Click here to download latest final release (MDI 1.1.11 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.1.11/mdi-1.1.11.atf?download=)
+  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0)
+  - [Click here to see latest final release (MDI mdi-acm-core-1.0.0 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/)
+  - [Click here to download latest final release (MDI mdi-acm-core-1.0.0 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-mdi-acm-core-1.0.0.atf?download=)
   ### Change Log:
   <details>
-  <summary><h3>📋 1.1.11 Changelog (Click to expand)</h3></summary>
+  <summary><h3>📋 mdi-acm-core-1.0.0 Changelog (Click to expand)</h3></summary>
 
-# [MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.1.11/mdi-1.1.11.atf)
+# [mdi-acm-core-1.0.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -29,64 +29,58 @@ Latest Production Release.
 
 ### Changelog:
 
+#### Versioning:
+- **FUXA:** 1.0.0
+- **Expanded Comms:** 1.0.0
+- **eRCM:** 1.0.0
+- **MDI:** 1.1.13
+
 #### Quality of Life Changes:
-- **Ethernet Gbit:** Added the ability to set 2 IP Adresses on Ethernet Gbit
-- **Ethernet Gbit:** Added a default ip address to the 2nd ip address off 192.168.1.175 when first provisioning.
-- **Master AWI:** Added the master awi when it does not exist. version 2.0.1.
-- **Keyboard:** Modified keyboard background opacity so in situations like the HMI sleep in settings, the number behind the keyboard is visible.
-- **Keyboard:** Changed functionality of the backspace button on the keyboard to allow holding down of the button to delete multiple characters.
-- **Import Config:** Added a loading spinner while importing a config.
-- **Screen Sleep Timer:** Added the ability to ignore the first input when pressing the screen, for this to take effect re-save the screen sleep timer.
-- **DE-4000 IP:** Added the ability to change the DE-4000 Ip address due to issues when 2 DE-4000's are connected on the same network.
-- **RS-485 Timout:** Lowered Timeout for RS-485 failed request from 2 seconds to 1 second due to impact on polling other devices on the bus.
-- **CM4:** Added Datalogging for CM4 Temperature, CPU Usage, CPU Clock, and System Ram.
-- **Temperature:** Added Graphic for CM4 Temperature this will show you the current temperature in C or F.  
-- **RTU:** Added the ability to set Parity, Data Bits, and Stop Bits for RS-485 Ports.  
-- **RTU:** Set Defaults to baud rates for RS-485 1 at 9600 baud and RS-485 2 at 38400 baud instead of empty selections.
-- **QOL-GENERAL:** Removed non-required browser console logging.
-- **Gateway Caching:** Changed Cache time from 500ms to 1s to speed up networking when using multiple browsers. 
-- **Main Device:** Added none option for Main Device.
+- **Package Management:** Added the ability to view versions of FUXA, Expanded Comms, and ACI Server packages in the ACM.
+- **USB Update Naming:** Renamed USB update to mdi-acm-core-X.X.X and added support for update files that start with both `mdi-` and `acm-` prefixes.
+
+> **⚠️ Important:** Starting with future releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem. The current `mdi-acm-core-1.0.0` naming is used only for this transitional version since we added the ability to identify files using the `acm-` prefix in this release.
+- **Cursor Display:** Modified the startup script to allow cursor to be shown when connected to the ACM with a mouse.
+- **Network Configuration:** Modified the Client Mode Network to use nmcli instead of wpa_supplicant for improved reliability.
+- **Serial Port Path:** Modified path for RS485 ports due to an intermittant issue where serial ports would sometimes disconnect and reconnect.
 
 #### Bug Fixes:
-- **Data Explorer/Trending:** Fixed an issue importing a config where the new EthGbit2 IP address would not update properly. Also Fixed an issue where the EthGbit2 IP address would not update if it was the only Ip Address Changed.
-- **Data Explorer/Trending:** Fixed an issue where Trending UI would not update when accessing the MDI via. the former static ip address of 98.102.65.175
-- **Screen Sleep Timer/Import Config:** Fixed an issue with importing a config where the saving process would not go through due to the addition of the Screen Sleep Timer.
-- **Settings Save:** Fixed an issue added in 1.1.2 where settings would be stuck on save if saving with a sleep timer active.
-- **HMI Sleep:** Fixed an issue added in 1.1.2 where if using a sleep timer, when the display would go to sleep the ACM would initiate a reboot due to the watchdog in the MDI-Gateway.
-- **Screen Sleep Timer:** Fixed an issue where the screen sleep timer would not save properly, causing no sleep to occur.
-- **First Run Modal:** Fixed an issue when importing a config under certain circumstances you would keep recieving Are you using the DE-4000 pop up after pressing yes.
-- **AWI Reupload:** Fixed an issue when reuploading an AWI device registers would not update if the registers changed until a reboot.
-- **Data Explorer/Trending:** Fixed an issue where the Trending backend would still reference the 98.102.65.174 IP address when using a seperate IP address for the DE-4000
-  - **Time Synchronization:** Fixed an issue where the ACM-4000 would not update its time with the DE-4000
+- **Temperature Watchdog:** Removed software watchdog from MDI-Gateway which caused a reboot cycle when above 90°C CM4 temperature.
+- **TCP Server Float32:** Fixed an issue with the slave TCP server in the MDI-Gateway which caused float32 registers to only return 16 bits.
+- **Ethernet Hotplug:** Allowed ethernet ports to hotplug when in a bridge due to an issue where if an ethernet port disconnects and reconnects it did not rejoin the bridge.
 
 #### New Features:
-- **Main Device:** Fixed an issue in 1.1.1 where when selecting an AWI as the main device, this did not show properly.
-- **Device Poll Errors:** Added an option to view communication errors for each device up to the last 50 available.
-- **Static IP:** Removed Static IP address of **98.102.65.175** due to issues when 2 ACM's are connected on the same network.
-- **TCP Server:** Added a TCP server on the MDI to poll device values.
+- **FUXA Integration:** Added FUXA Debian package which installs FUXA on the ACM when using an ACM with more than 8GB of storage.
+- **Expanded Communications:** Added Expanded Comms Debian package which installs enhanced communication capabilities on the ACM when using an ACM with more than 8GB of storage.
+- **eRCM:** Added eRCM Debian packages which installs the ACI kernel and hosts a HTTP Server at port 8088 and a TCP server at port 503.
+
+> **📋 Note:** All new features listed above are only available on ACM-4000 devices equipped with CM4 modules that have more than 8GB of storage capacity.
+
 
 ## Where To Find This Release
 
-### ACM-4000 bootloader update version 1.1.11
+### ACM-4000 bootloader update version mdi-acm-core-1.0.0
 
-[MDI 1.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/1.1.11/mdi-1.1.11.atf)
+[mdi-acm-core-1.0.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf)
 
 ## Update Instructions
 
 ### For ACM-4000 with MDI Already Installed
 
-1. **Download MDI 1.1.11**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/Final/1.1.11/mdi-1.1.11.atf?download=)
+> **⚠️ Important:** When updating a system where the Main Device is the DE-4000, Altronic recommends updating the DE-4000 prior to the ACM-4000 to ensure proper compatibility and system synchronization.
+
+1. **Download mdi-acm-core-1.0.0**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000
 5. **Access Menu**: Click the Hamburger button on the MDI
 6. **Navigate to System**: Click System Info
 7. **Locate Update File**:
-   - Click Refresh 
-   - You will see the file you added to the USB
+  - Click Refresh 
+  - You will see the file you added to the USB
 8. **Select Update**:
-   - Click the checkbox for this file
-   - Click update
+  - Click the checkbox for this file
+  - Click update
 9. **Finalize**: Once update is complete, the ACM-4000 will power cycle automatically
 
 ### For ACM-4000 without MDI Already Installed
@@ -116,6 +110,7 @@ If your ACM-4000 does not currently have the MDI installed, you will need:
 
 ### Imaging Process Notes
 Complete imaging instructions can be found in the [ACM Imaging Instructions](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-imaging-guide/) documentation.
+
 
 </details>
 
