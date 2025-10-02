@@ -1,5 +1,8 @@
 Release Candidates
-
+2.2.1 10-2-25
+Used with v2.1.0 (20251002) of ST firmware.
+Updates to one coil per cylinder configuration.
+Updates to AWI screens: Added hall effects per cycle setting in "Setup" screen. This should normally be 1 unless the hall effect spins at an abnormal speed due to gear ratios.
 
 
 
