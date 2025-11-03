@@ -13,7 +13,7 @@ The AWI is embedded in the **ACM-4000 Compute Module**, which serves as part of 
 Altronic Web Interface files come in several formats, each serving a specific role in configuration and deployment workflows.
 
 ### Master AWI File (.html)
-- Downloaded from altronic.netlify.app
+- Downloaded from [altronic.netlify.app](altronic.netlify.app)
 - Contains the latest version of the AWI with all supported device templates.
 - Used as the base project file where new devices and dashboards are configured and exported.
 
@@ -39,7 +39,7 @@ For restoring or deploying complete multi-device setups to another ACM-4000 or s
 ---
 
 ## Directory Structure & Purpose  
-Each folder in this directory corresponds to a different **product offering** (eg. `SAVeS/`) or **specific function** (e.g., `CAT-CDL-COMS/`). The naming convention and purpose are described below:
+Each folder in this directory corresponds to a different **product offering** (e.g. `SAVeS/`) or **specific function** (e.g., `CAT-CDL-COMS/`). The naming convention and purpose are described below:
 
 In each of these folders you will typically find:  
 - AWI configuration `.json` files (for communications and setup)  
@@ -85,6 +85,6 @@ Each file typically follows this format:
 ---
 
 ## Notes
-- These dashboards represent **Altronic’s official and released standards**.  
+- These files represent **Altronic’s current standards**.  
 - Updates or revisions will be tagged and versioned in this repository.  
 - For questions or support, contact Altronic Support at **Altronic.Support@hoerbiger.com**.
