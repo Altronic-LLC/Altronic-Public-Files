@@ -22,23 +22,21 @@ Latest Production Release.
 - **MDI:** 1.1.17
 
 #### Quality of Life Changes:
-- **Package Management:** Added the ability to view versions of FUXA, Expanded Comms, and ACI Server packages in the ACM.
-- **USB Update Naming:** Renamed USB update to mdi-acm-core-X.X.X and added support for update files that start with both `mdi-` and `acm-` prefixes.
+- **USB Update Naming:** Renamed USB update to acm-core-X.X.X and added support for update files that start with both `mdi-` and `acm-` prefixes.
 
-> **⚠️ Important:** Starting with future releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem. The current `acm-core-1.0.1` naming is used only for this transitional version since we added the ability to identify files using the `acm-` prefix in this release.
-- **Cursor Display:** Modified the startup script to allow cursor to be shown when connected to the ACM with a mouse.
-- **Network Configuration:** Modified the Client Mode Network to use nmcli instead of wpa_supplicant for improved reliability.
-- **Serial Port Path:** Modified path for RS485 ports due to an intermittant issue where serial ports would sometimes disconnect and reconnect.
+> **⚠️ Important:** Starting with this release releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem.
 
 #### Bug Fixes:
-- **Temperature Watchdog:** Removed software watchdog from MDI-Gateway which caused a reboot cycle when above 90°C CM4 temperature.
-- **TCP Server Float32:** Fixed an issue with the slave TCP server in the MDI-Gateway which caused float32 registers to only return 16 bits.
-- **Ethernet Hotplug:** Allowed ethernet ports to hotplug when in a bridge due to an issue where if an ethernet port disconnects and reconnects it did not rejoin the bridge.
+- **New ACMErcm File Transfer:** Fixed an issue that causes production provisioned ACM's to be unable to recieve files from the DE-4000 such as eRCM license files.
+- **New ACM Real Time Clock:** Fixed an issue where the Real Time Clock on the ACM-4000 was not updated to the DE-4000's time when using a New ACM. This caused odd issues due to timing out of sync.
+- **Main Device Custom URL:** Fixed an issue where if an invalid URL is placed as the custom URL the UI would not load on the ACM any longer. If an invalid URL is now placed in the Custom URL Field, it will now revert to the Default(DE-4000).
+- **Ethernet Ip Validation:** Enhanced Validation for Ethernet Ip addresses to ensure 2 IP's or ports are not on the same subnet.
+- **Writing to a Modbus RTU device over Modbus TCP:** Fixed an intermittant issue that caused Modbus TCP writes to the slave server to a Modbus RTU device to fail.
+- **ACM-4000 Datalogging:** Fixed an issue where if you were to update the ACM-4000, if there is no SD card it would log data to the CM4.
+- **ACM-4000 Network Configuration:** Fixed an intermittant issue that caused network saves to fail until the ACM-4000 was power cycled.
+s
 
 #### New Features:
-- **FUXA Integration:** Added Fuxa Debian package which installs FUXA on the ACM when using an acm with more than 8GB of storage.
-- **Expanded Communications:** Added Expanded Comms Debian package which installs FUXA on the ACM when using an acm with more than 8GB of storage.
-- **eRCM:** Added eRCM Debian packages which installs the ACI kernel and hosts a HTTP Server at port 8088 and a TCP server at port 503.
 
 
 ## Where To Find This Release

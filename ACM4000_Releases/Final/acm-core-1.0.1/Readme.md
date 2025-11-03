@@ -27,6 +27,14 @@ Latest Production Release.
 > **⚠️ Important:** Starting with this release releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem.
 
 #### Bug Fixes:
+- **New ACMErcm File Transfer:** Fixed an issue that causes production provisioned ACM's to be unable to recieve files from the DE-4000 such as eRCM license files.
+- **New ACM Real Time Clock:** Fixed an issue where the Real Time Clock on the ACM-4000 was not updated to the DE-4000's time when using a New ACM. This caused odd issues due to timing out of sync.
+- **Main Device Custom URL:** Fixed an issue where if an invalid URL is placed as the custom URL the UI would not load on the ACM any longer. If an invalid URL is now placed in the Custom URL Field, it will now revert to the Default(DE-4000).
+- **Ethernet Ip Validation:** Enhanced Validation for Ethernet Ip addresses to ensure 2 IP's or ports are not on the same subnet.
+- **Writing to a Modbus RTU device over Modbus TCP:** Fixed an intermittant issue that caused Modbus TCP writes to the slave server to a Modbus RTU device to fail.
+- **ACM-4000 Datalogging:** Fixed an issue where if you were to update the ACM-4000, if there is no SD card it would log data to the CM4.
+- **ACM-4000 Network Configuration:** Fixed an intermittant issue that caused network saves to fail until the ACM-4000 was power cycled.
+s
 
 #### New Features:
 
