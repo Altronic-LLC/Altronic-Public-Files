@@ -1,7 +1,7 @@
 # AWI Files - SAVeS
 
 ## Overview  
-This directory contains the official **Altronic Web Interface (AWI)** dashboards and configuration files for **SAVeS Vibration Sensors**.
+This directory contains the official **Altronic Web Interface (AWI)** dashboards and configuration files for **Smart Altronic Vibration Sensor (SAVeS)**.
 These files have been tested and validated by Altronic engineering to ensure proper communication, performance, and compatibility with supported Altronic systems.
 
 Each file within this folder supports a specific configuration or communication setup and has been verified for proper data polling and visualization within the AWI or ACM-4000 environment.
