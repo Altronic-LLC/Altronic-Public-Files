@@ -38,9 +38,9 @@ The Multi-Tab AWI uses a layered navigation approach:
 
 ---
 
-## Naming Convention  
-The filenames in this repository are pre-named to work with the SAVeS_MultiTab AWI.
-If you wish to use the SAVeS_MultiTab AWI as is, all additional AWIs must remain the same name whent hey are loaded.
+## ⚠️ Naming Convention  
+- The filenames in this repository are pre-named to work with the SAVeS_MultiTab AWI.
+- ⚠️ **Important:** If you wish to use the SAVeS_MultiTab AWI as is, all additional AWIs must remain the same name when they are loaded.
 
 ---
 
