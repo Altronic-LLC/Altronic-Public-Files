@@ -1,23 +1,52 @@
 # Altronic Web Interfaces
 
 ## Overview  
-This directory contains the official web-interface configuration and dashboard files released by Altronic, LLC for use with its ACM-4000 mdevice.  
-These files support a range of Altronic products, enabling browser-based dashboards for configuration interfaces, device communication, and visualization of engine/process data.
+This directory contains the official web-interface configuration and dashboard files released by **Altronic, LLC** for use with its ACM-4000 module and associated devices.  
+These files support a range of Altronic products, ranging from device communication setup to enabling browser-based dashboards for configuration interfaces and visualization of process data.
 
-The Altronic Web Interface (AWI) is designed to operate fully in a web browser (even offline), replacing traditional terminal programs and providing monitoring and control of supported Altronic systems.
-The AWI is embedded in the ACM‑4000 Module used in Altronic control panels.
+The **Altronic Web Interface (AWI)** is designed to operate fully in a web browser (even offline), replacing traditional terminal programs and providing monitoring and control of supported Altronic systems.
+The AWI is embedded in the **ACM-4000 Compute Module**, which serves as part of the central platform for Altronic’s digital control and monitoring system.
+
+---
+
+## File Types Explained  
+Altronic Web Interface files come in several formats, each serving a specific role in configuration and deployment workflows.
+
+### Master AWI File (.html)
+- Downloaded from altronic.netlify.app
+- Contains the latest version of the AWI with all supported device templates.
+- Used as the base project file where new devices and dashboards are configured and exported.
+
+**Use case:**
+For creating and managing exported AWIs for individual devices.
+
+### Device (Exported) AWI File (.html)
+- Generated from the MASTER AWI after selecting a single device configuration.
+- Represents a self-contained dashboard and interface for that specific device.
+- Used for adding or integrating a single device into a Multi-Device Interface (MDI) system.
+
+**Use case:**
+For uploading or importing an AWI configuration for one device into an MDI project.
+
+### MDI Configuration (.json)
+- Exported from the MDI system (via the Settings page → Download Config / Export Config).
+- Contains all device configurations, communication settings, and dashboard assignments for an entire MDI setup.
+- Used for backup, replication, or bulk deployment of MDI configurations.
+
+**Use case:**
+For restoring or deploying complete multi-device setups to another ACM-4000 or system instance.
 
 ---
 
 ## Directory Structure & Purpose  
-Each folder in this directory corresponds to a different product offering (eg. SAVeS) or specific function (eg. CAT-CDL-COMS). The naming convention and purpose are described below:
+Each folder in this directory corresponds to a different **product offering** (eg. `SAVeS/`) or **specific function** (e.g., `CAT-CDL-COMS/`). The naming convention and purpose are described below:
 
 In each of these folders you will typically find:  
-- AWI Configuration JSON files (used for communications)  
-- AWI Dashboard HTML files 
-- Revision or version indicators (v0, v1 etc.)  
-- “_DBO” variants which are optimized for dashboard-only polling (see below)  
-- Documentation or readme files explaining specific file naming, usage, and variants
+- AWI configuration `.json` files (for communications and setup)  
+- AWI dashboard `.html` files (for web-based visualization)
+- Revision or version indicators (`v0`, `v1`, etc.)  
+- `_DBO` variants which are optimized for dashboard-only polling (see below)  
+- Documentation or ReadMe files explaining specific specific file naming and usage
 
 ---
 
@@ -26,11 +55,13 @@ Within each folder you may find two main categories of interface files:
 
 ### Standard Interface Dashboards  
 These pull **all available registers** relevant to the device or engine (even those not shown on the dashboard) to support full data coverage and diagnostics.  
-Use case: For engineers or applications needing comprehensive visibility.
+**Use case:**
+For users or applications needing comprehensive visibility.
 
 ### Dashboard-Only (DBO) Interfaces  
-Files with the suffix `_DBO` (Dashboard Only) poll **only the registers displayed on the dashboard**, resulting in faster update/polling performance but fewer underlying data points.  
-Use case: For monitoring where speed and responsiveness are more important than full data coverage.
+Files with the suffix `_DBO` (Dashboard Only) poll **only the registers displayed on the dashboard**, providing faster refresh rates due to reduced polling load.  
+**Use case:**
+For monitoring where **speed and responsiveness** are more important than full data coverage.
 
 ---
 
@@ -46,8 +77,8 @@ Each file typically follows this format:
 
 ## How to Use This Folder  
 1. Navigate into the specific folder (e.g., `CAT-CDL-COMS/`).  
-2. Choose the correct interface file for your system (standard vs. DBO).  
-3. Download the file and load into your ACM-4000.  
+2. Choose the correct interface file for your system (standard vs. `_DBO`).  
+3. Download and load the file into your ACM-4000.  
 4. Ensure network and communication settings match your device (IP address, protocol, node ID, poll settings).
 5. Use the documentation included in each sub-folder (or in this repo) for further configuration details.
 
