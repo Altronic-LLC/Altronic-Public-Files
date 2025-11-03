@@ -1,7 +1,7 @@
 # AWI Dashboards - CAT Engine CDL Communications
 
 ## Overview
-This repository contains the Altronic standard, tested, and released AWI dashboards used for **CAT Engine CDL communications**.  
+This repository contains the web-interface configuration and dashboard files released by **Altronic, LLC** for use with **CAT Engine CDL communications**.  
 These dashboards are designed and validated by Altronic engineering to ensure compatibility, performance, and reliability across supported engine types.
 
 Each dashboard file corresponds to a specific CAT engine configuration and has been tested for proper data polling and visualization within the Altronic Web Interface.
