@@ -5,14 +5,15 @@
   ### When to Use:
   - Use this release to apply the latest fixes, quality of life improvements, and new features while ensuring stability. This is the new baseline version.
   ### Applicable Links:
-  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0)
-  - [Click here to see latest final release (MDI mdi-acm-core-1.0.0 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/)
-  - [Click here to download latest final release (MDI mdi-acm-core-1.0.0 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-mdi-acm-core-1.0.0.atf?download=)
+  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1)
+  - [Click here to see latest final release (MDI acm-core-1.0.1 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1/)
+  - [Click here to download latest final release (MDI acm-core-1.0.1 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1/mdi-acm-core-1.0.1.atf?download=)
   ### Change Log:
   <details>
-  <summary><h3>📋 mdi-acm-core-1.0.0 Changelog (Click to expand)</h3></summary>
+  <summary><h3>📋 acm-core-1.0.1 Changelog (Click to expand)</h3></summary>
 
-# [mdi-acm-core-1.0.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf)
+# [acm-core-1.0.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1/acm-core-1.0.1.atf)
+# [acm-core-1.0.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1/acm-core-1.0.1.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -33,35 +34,31 @@ Latest Production Release.
 - **FUXA:** 1.0.0
 - **Expanded Comms:** 1.0.0
 - **eRCM:** 1.0.0
-- **MDI:** 1.1.13
+- **MDI:** 1.1.17
 
 #### Quality of Life Changes:
-- **Package Management:** Added the ability to view versions of FUXA, Expanded Comms, and ACI Server packages in the ACM.
-- **USB Update Naming:** Renamed USB update to mdi-acm-core-X.X.X and added support for update files that start with both `mdi-` and `acm-` prefixes.
+- **USB Update Naming:** Renamed USB update to acm-core-X.X.X and added support for update files that start with both `mdi-` and `acm-` prefixes.
 
-> **⚠️ Important:** Starting with future releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem. The current `mdi-acm-core-1.0.0` naming is used only for this transitional version since we added the ability to identify files using the `acm-` prefix in this release.
-- **Cursor Display:** Modified the startup script to allow cursor to be shown when connected to the ACM with a mouse.
-- **Network Configuration:** Modified the Client Mode Network to use nmcli instead of wpa_supplicant for improved reliability.
-- **Serial Port Path:** Modified path for RS485 ports due to an intermittant issue where serial ports would sometimes disconnect and reconnect.
+> **⚠️ Important:** Starting with this release releases, USB update packages will use the new naming convention: `acm-core-X.X.X` instead of `mdi-X.X.X`. This change reflects the expanded scope of the ACM platform beyond just the MDI interface - with the integration of FUXA, Expanded Communications, and ACI Server packages, the system now encompasses a comprehensive control and monitoring solution where the MDI is just one component of the broader ACM ecosystem.
 
 #### Bug Fixes:
-- **Temperature Watchdog:** Removed software watchdog from MDI-Gateway which caused a reboot cycle when above 90°C CM4 temperature.
-- **TCP Server Float32:** Fixed an issue with the slave TCP server in the MDI-Gateway which caused float32 registers to only return 16 bits.
-- **Ethernet Hotplug:** Allowed ethernet ports to hotplug when in a bridge due to an issue where if an ethernet port disconnects and reconnects it did not rejoin the bridge.
+- **New ACM Ercm File Transfer:** Fixed an issue that causes production provisioned ACM's to be unable to recieve files from the DE-4000 such as eRCM license files.
+- **New ACM Real Time Clock:** Fixed an issue where the Real Time Clock on the ACM-4000 was not updated to the DE-4000's time when using a New ACM. This caused odd issues due to timing out of sync.
+- **Main Device Custom URL:** Fixed an issue where if an invalid URL is placed as the custom URL the UI would not load on the ACM any longer. If an invalid URL is now placed in the Custom URL Field, it will now revert to the Default(DE-4000).
+- **Ethernet Ip Validation:** Enhanced Validation for Ethernet Ip addresses to ensure 2 IP's or ports are not on the same subnet.
+- **Writing to a Modbus RTU device over Modbus TCP:** Fixed an intermittant issue that caused Modbus TCP writes to the slave server to a Modbus RTU device to fail.
+- **ACM-4000 Datalogging:** Fixed an issue where if you were to update the ACM-4000, if there is no SD card it would log data to the CM4.
+- **ACM-4000 Network Configuration:** Fixed an intermittant issue that caused network saves to fail until the ACM-4000 was power cycled.
+s
 
 #### New Features:
-- **FUXA Integration:** Added FUXA Debian package which installs FUXA on the ACM when using an ACM with more than 8GB of storage.
-- **Expanded Communications:** Added Expanded Comms Debian package which installs enhanced communication capabilities on the ACM when using an ACM with more than 8GB of storage.
-- **eRCM:** Added eRCM Debian packages which installs the ACI kernel and hosts a HTTP Server at port 8088 and a TCP server at port 503.
-
-> **📋 Note:** All new features listed above are only available on ACM-4000 devices equipped with CM4 modules that have more than 8GB of storage capacity.
 
 
 ## Where To Find This Release
 
-### ACM-4000 bootloader update version mdi-acm-core-1.0.0
+### ACM-4000 bootloader update version acm-core-1.0.1
 
-[mdi-acm-core-1.0.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf)
+[acm-core-1.0.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/acm-core-1.0.1/acm-core-1.0.1.atf)
 
 ## Update Instructions
 
@@ -69,7 +66,7 @@ Latest Production Release.
 
 > **⚠️ Important:** When updating a system where the Main Device is the DE-4000, Altronic recommends updating the DE-4000 prior to the ACM-4000 to ensure proper compatibility and system synchronization.
 
-1. **Download mdi-acm-core-1.0.0**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/Final/mdi-acm-core-1.0.0/mdi-acm-core-1.0.0.atf?download=)
+1. **Download acm-core-1.0.1**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/Final/acm-core-1.0.1/acm-core-1.0.1.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000
@@ -110,6 +107,7 @@ If your ACM-4000 does not currently have the MDI installed, you will need:
 
 ### Imaging Process Notes
 Complete imaging instructions can be found in the [ACM Imaging Instructions](https://www.altronic-llc.com/wiki-doc/acm-4000/acm-4000-imaging-guide/) documentation.
+
 
 
 </details>
