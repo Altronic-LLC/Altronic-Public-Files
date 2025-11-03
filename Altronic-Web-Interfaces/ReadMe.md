@@ -1,7 +1,7 @@
 # Altronic Web Interfaces
 
 ## Overview  
-This directory contains the official web-interface configuration and dashboard files released by **Altronic, LLC** for use with its ACM-4000 module and associated devices.  
+This repository contains the web-interface configuration and dashboard files released by **Altronic, LLC** for use with its ACM-4000 module and associated devices.  
 These files support a range of Altronic products, ranging from device communication setup to enabling browser-based dashboards for configuration interfaces and visualization of process data.
 
 The **Altronic Web Interface (AWI)** is designed to operate fully in a web browser (even offline), replacing traditional terminal programs and providing monitoring and control of supported Altronic systems.
@@ -39,7 +39,7 @@ For restoring or deploying complete multi-device setups to another ACM-4000 or s
 ---
 
 ## Directory Structure & Purpose  
-Each folder in this directory corresponds to a different **product offering** (e.g. `SAVeS/`) or **specific function** (e.g., `CAT-CDL-COMS/`). The naming convention and purpose are described below:
+Each folder in this directory corresponds to a different **product offering** (e.g. `SAVeS/`) or **specific function** (e.g. `CAT-CDL-COMS/`). The naming convention and purpose are described below:
 
 In each of these folders you will typically find:  
 - AWI configuration `.json` files (for communications and setup)  
