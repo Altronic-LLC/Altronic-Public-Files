@@ -46,6 +46,6 @@ Examples:
 ---
 
 ## Notes
-- These dashboards represent **Altronic’s official and released standards**.  
+- These files represent **Altronic’s current standards**.
 - Updates or revisions will be tagged and versioned in this repository.  
 - For questions or support, contact Altronic Support at **Altronic.Support@hoerbiger.com**.
