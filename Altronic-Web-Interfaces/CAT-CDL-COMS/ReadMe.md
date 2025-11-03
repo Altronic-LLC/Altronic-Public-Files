@@ -48,4 +48,4 @@ Examples:
 ## Notes
 - These dashboards represent **Altronic’s official and released standards**.  
 - Updates or revisions will be tagged and versioned in this repository.  
-- Contact the **Altronic Support team** (altronic.support@hoerbiger.com) for additional information or support.
+- For questions or support, contact Altronic Support at **Altronic.Support@hoerbiger.com**.
