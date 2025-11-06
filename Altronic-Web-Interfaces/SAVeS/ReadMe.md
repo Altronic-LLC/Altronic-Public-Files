@@ -1,4 +1,4 @@
-# AWI Files - SAVeS
+# ACM-4000 Files - SAVeS
 
 ## Overview  
 This directory contains the **Altronic Web Interface (AWI)** dashboards and configuration files for **Smart Altronic Vibration Sensor (SAVeS)**.
