@@ -1,4 +1,4 @@
-# Altronic Web Interfaces
+# Altronic Web Interfaces (AWI) & Multi Device Interfaces (MDI)
 
 ## Overview  
 This repository contains the web-interface configuration and dashboard files released by **Altronic, LLC** for use with its ACM-4000 module and associated devices.  
@@ -28,7 +28,7 @@ For creating and managing exported AWIs for individual devices.
 **Use case:**
 For uploading or importing an AWI configuration for one device into an MDI project.
 
-### MDI Configuration (.json)
+### Multi Device Interface (MDI) Configuration (.json)
 - Exported from the MDI system (via the Settings page → Download Config / Export Config).
 - Contains all device configurations, communication settings, and dashboard assignments for an entire MDI setup.
 - Used for backup, replication, or bulk deployment of MDI configurations.
