@@ -8,13 +8,13 @@
   - Use this release to apply the latest fixes, quality of life improvements, and new features while ensuring stability. This is the new baseline version.
   ### Applicable Links:
   - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/)
-  - [Click here to see latest final release (DE-4000 3.0.4 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/)
-  - [Click here to download latest final release (DE-4000 3.0.4 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf?download=)
+  - [Click here to see latest final release (DE-4000 3.0.8 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/)
+  - [Click here to download latest final release (DE-4000 3.0.8 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
   ### Change Log:
   <details>
-  <summary><h3>📋 3.0.4 Changelog (Click to expand)</h3></summary>
+  <summary><h3>📋 3.0.8 Changelog (Click to expand)</h3></summary>
 
-# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -26,59 +26,50 @@
 ## Release Kind: Final Release
 
 ## Intended Use and Users
-The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.
+
+The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.n.
 
 ### Changelog:
 
-#### Bug Fixes:
-- **Performance:** Fixed an issue regarding slow performance when switching between screens.
-- **RPM Live Update:** Fixed an issue where updating an rpm channel live would cause a ppr that would be offset by 1.
-- **Lua Scripting:** Added 4 new Lua Functions, get_channel_high_alarm_sp, get_channel_low_alarm_sp, get_channel_high_safety_sp, get_channel_low_safety_sp
-- **Lube No Flow Test Fault** Fixed an issue where if using test mode, if a lube no flow faulted the fault would not be clearable until a new fault occured.
-- **False Pressure Shutdown** Added additional checks to ensure there are no false shutdowns on analog input channels.
-- **Bootloader Update** Fixed an issue that caused intermittant failure of bootloader process when updating Controller or Terminal Boards
-- **Bootloader Update** Added Bootloader Update instructions
-- **Bootloader Update** Added a pop up under any condition the bootloader process were to fail, to show the failure error to the user and exit the loading screen.
-- **Version Registers** Added registers 705-760 to the node 200 32-bit modbus registers containing the version information for the boards.
-- **Version Pop-Up** Fixed an issue with the version popup if firmware is mismatched that the OK button was black on a black background, this is now white.
-- **Adding to Dashboard:** Fixed an issue where dashboard items would not be added in the correct position & adding new rows to the dashboard would cause a black screen on any page other than 1 (Fixed in RC12)
-- **Memory Issue:** Fixed an issue causing increase in memory usage when navigating between pages in the User Interface (Fixed in RC11)
-- **Performance Issue:** Fixed an issue causing slow performance when logged in while a timer is ticking down after several inputs (Fixed in RC10)
-- **Trending Dynamic IP:** Modified the trending so that IP address can be used dynamically (Fixed in RC9)
-- **Setting Buttons Formatting:** Fixed a formatting issue on settings buttons which caused overlap on some resolutions (Fixed in RC8)
-- **Importing Config with Script:** Fixed an issue where due to previous changes in this release candidate, when importing a config, imported script would not always save properly (Fixed in RC8)
-- **Reset Button:** Fixed an issue where the physical hardware reset button no longer reset timers (Fixed in RC7)
-- **Memory Issue:** Fixed an issue in memory which would cause intermittent freezing when paired with the MDI (Fixed in RC7)
-- **Dashboard Radial Gauge:** Fixed an issue where the ticks in a Radial Gauge would not show if the value was below 5 (Fixed in RC2)
-- **Startup State Timers:** Fixed an issue where the user could enter a blank value for startup timer and timeout minutes and seconds (Fixed in RC1)
-
 #### New Features:
-- **Pop-up Version:** Added Pop-up informing the User of mismatched firmware when first loading the DE-4000 (Added in RC12)
-- **Status LCD Color:** Added the ability to set the color of the Status LCD in script (Added in RC12)
+- **HMI Control Permissions:** Added the ability to disable HMI Start/Stop/Reset functions through system settings toggles. Physical button functionality remains independent of HMI settings.
+- **State 0 Permissive Control:** Added permissive controls for State 0 that determine whether the unit can be started. Start operation is only allowed when all permissives are met.
+- **Virtual Input PID Support:** Added the ability to use Script Virtual (SVirt) inputs for PID control loops.
+- **Password Management:** Added factory-level functionality to reset Admin and User passwords.
+- **Dashboard Row Management:** Added the ability to insert or remove rows in the middle of the dashboard without having to reorganize existing content.
+- **Event Log Export:** Added the ability to export event logs while connected to the DE-4000 via PC.
+- **Battery Saver Integration:** Added battery saver script functionality with UI configuration options available in the global settings.
+- **Digital Output Usage Tracking:** Added system to track and display where digital outputs are being used throughout the system.
+- **Advanced Trending UI:** Updated the exit button color in Advanced Trending for better visibility.
+
+#### Bug Fixes:
+- **Settings Screen Display:** Fixed scaling issues on the settings screen that caused text overlap. System information now properly displays across two lines instead of one.
+- **Script Editor Scaling:** Fixed script editor scaling when auto-scaling is enabled. The editor now uses the full screen real estate for improved text resolution and readability.
+- **Controller Performance:** Merged controller and Redis tasks on the DE-4000 Controller to resolve previous fault shutdown issues and improve system stability.
+- **Modbus Script Timing:** Modified Node Red flow to ensure Modbus scripts run after all Controller tasks are complete, minimizing Redis server contention.
+- **eFinalM IP Address:** Fixed eFinalM IP address initialization to prevent yellow/warning status at startup.
+- **Channel Configuration:** Removed the unused Vibration channel option from the channels screen to simplify configuration.
+- **Current Loop Labeling:** Updated Current Loop display name to "Current Loop (4-20 mA)" for clarity.
+- **Script Refresh Function:** Fixed Redis key handling in RefreshScript function to include proper default values when keys don't exist for terminal board never connected.
+- **ERCM Heartbeat:** Removed polling for the ercm heartbeat, ercm will now send this directly to the de-4000.
+- **Digital Output Pulse Function:** Fixed an issue with digital output pulse functionality when used with a larger timeframe.
 
 #### Quality of Life Improvements:
-- **Pop-up Modal UI:** Added Pop-up window when you change Type and Changed the color of the text of Pop-up window when you change the timer of Input Class C to 0 in Safety Shutdown Settings (Added in RC9)
-- **Pop-up Modal changing Types:** Implemented the functionality when changing the type of the sensor shows pop-up modal with toggle switch between Previous-default values for Safety, Control and Alarm (High and Low Setpoints) (Added in RC9)
-- **Control PID Ramp in Manual:** Added logic to have the Control PID ramp from idle to low rpm when in Manual instead of just in auto (Added in RC8)
-- **Lua Script:** Modification to script to allow Panel Engineers to override a function (Added in RC8)
-- **DE-4000 Update with MDI:** Addressed changes with MDI 1.1.0 which will not show the new update screen unless using this firmware or higher (Added in RC8)
-- **Communication Loss Timer:** Changed the communication loss timeout to 6s from 30s on the controller board (Added in RC7)
-- **Optimized Saving:** Optimized saving process on controller board which reduced time to save by half (Added in RC7)
-- **HSC:** Modified Terminal board to send HSC status over ethernet as an extra safeguard if no HSC wire is present (Added in RC7)
-- **Optimized Gauge Rendering:** Fixed an issue where the Linear and Radial Gauges would rerender when a new value the same as the previous (Added in RC7)
+- **Lua Scripting:** Added get_alarm_status function to controller for lua master scripts, returns 1 if alarm is present.
+- **Terminal Firmware Integration:** Updated terminal firmware to support new controller-redis merged functionality.
 
 
 ## Where To Find This Release
 
-### DE-4000 bootloader update version 3.0.4
+### DE-4000 bootloader update version 3.0.8
 
-# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.4**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000

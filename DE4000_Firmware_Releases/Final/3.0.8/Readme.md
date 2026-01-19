@@ -1,4 +1,4 @@
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -7,15 +7,11 @@
 > Girard, Ohio 44420  
 > United States of America
 
-## Release Kind: Release Candidate
-
-Inteded for Application Testing prior to Final Release.
+## Release Kind: Final Release
 
 ## Intended Use and Users
 
-A staging Software/Firmware version intended for Application Testing.
-
-This software is not for sale or general distribution.
+The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.n.
 
 ### Changelog:
 
@@ -39,7 +35,7 @@ This software is not for sale or general distribution.
 - **Channel Configuration:** Removed the unused Vibration channel option from the channels screen to simplify configuration.
 - **Current Loop Labeling:** Updated Current Loop display name to "Current Loop (4-20 mA)" for clarity.
 - **Script Refresh Function:** Fixed Redis key handling in RefreshScript function to include proper default values when keys don't exist for terminal board never connected.
-- **ERCM Heartbeat:** Removed polling for the ercm heartbeat, ercm will now send this directly to the de-4000.
+- **ERCM Heartbeat:** Removed polling for the ERCM heartbeat, ERCM will now send this directly to the de-4000.
 - **Digital Output Pulse Function:** Fixed an issue with digital output pulse functionality when used with a larger timeframe.
 
 #### Quality of Life Improvements:
@@ -51,13 +47,13 @@ This software is not for sale or general distribution.
 
 ### DE-4000 bootloader update version 3.0.8
 
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.0.8/bootloader_3.0.8.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000
