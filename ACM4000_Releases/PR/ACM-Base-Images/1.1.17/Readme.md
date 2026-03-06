@@ -1,7 +1,6 @@
 # [ACM Base Images 1.1.17](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/ACM-Base-Images/1.1.17/MDI_1.1.17.zip)
 
 > **Copyright (c) 2025. All rights reserved.**
-> HOERBIGER ENGINE DIVISION
 > Altronic, LLC
 > 712 Trumbull Avenue
 > Girard, Ohio 44420
@@ -22,6 +21,7 @@ Early release of software intended for internal testing and evaluation. These ve
 ### Changelog:
 
 #### New Items:
+- **ACM Base Image 1.1.17:** Updated MDI Base Image For Field Updates, Starts at 1.1.17 MDI Version.
 
 ## Where To Find This Release
 
