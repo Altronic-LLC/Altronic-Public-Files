@@ -1,4 +1,8 @@
 Release Candidates
+
+DCPM CM4 v0.1.8
+Sending the config from the engine config tool might need to be sent multiple times with power cycles until the DCPM talks to the CIUs.
+
 DCPM CM4 1.2.2 10-2-25
 Used with v2.1.0 (20251002) of ST firmware and v 2.2.1 Logic Module CM4 software
 Note: you will have to update the ST first, then the Logic Module CM4 and finally the DCPM CM4.
