@@ -1,7 +1,6 @@
-# [MDI 1.1.18](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi-1.1.18/mdi-1.1.18.atf)
+# [MDI 1.2.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.2.0/mdi-1.2.0.atf)
 
-> **Copyright (c) 2025. All rights reserved.**  
-> HOERBIGER ENGINE DIVISION  
+> **Copyright (c) 2026. All rights reserved.**  
 > Altronic, LLC  
 > 712 Trumbull Avenue  
 > Girard, Ohio 44420  
@@ -11,30 +10,48 @@
 
 For demonstration and shakedown. May contain incomplete features, 
 bugs of various severity.
-
+x
 ## Intended Use and Users
 
 early release of software intended for internal testing and evaluation. These versions are not final and may contain bugs or incomplete features. They are distributed for testing purposes and are not to be used for production environments or field deployment.
 #### Versioning:
-- **MDI:** 1.1.18
+- **MDI:** 1.2.0
 
 ### Changelog:
 
+#### Quality of Life(QOL):
+- **Master AWI ignored when importing:** When importing a config, the Master AWI version is no longer overridden by the import.
+- **Ethernet settings verified on boot:** Ethernet settings are now verified to be correct to the settings on boot. If incorrect, settings will be changed.
+- **Disabled Energy Efficient Ethernet:** Disabled Energy Efficient Ethernet option for ETH Gbit, which could cause ~3 Seconds of lost communication while port is waking up.
+- **Default Master AWI Version 2.0.2:** Updated default master AWI version to 2.0.2.
+
+#### Bug Fixes:
+- **Import/Export Config Over 100MB Limit:** Moved the limit for configuration exporting to 800MB from 100MB.
+- **Permissions Device RS485 Port:** Fixed an issue where permissions did not apply to device RS485 port selection.
+- **DE4k Datalogging 64 bit:** Fixed an issue where values such as the epoch value on the DE-4000 were parsed as 32 bit values, leaving the epoch value to only change every 128 seconds.
+- **Trending Export Timezone:** Fixed an issue where downloading a csv from the trends page attempted to convert to the users timzone, this now directly uses the devices time.
+
 #### New Items:
-- **MDI 1.1.14 Update with latest release:** Merged Changed from mdi-1.1.14 into mdi 1.1.17.
+- **HDMI Hotplugging:** Added HDMI hotplugging functionality(ability to plug HDMI in live)
+- **Set Real Time Clock:** Added the ability to set the real time clock and date when not using a DE-4000 as the main device.
+- **FIFO SD Card Export:** Added the ability to use FIFO option for SD Card Export.
+- **SD Card Export by Month and Device:** Added the ability to export SD Card data by month and device.
+- **SD Card Export via browser:** Added the ability to export SD Card data directly downloaded to a connected PC(Must use USB when using HMI)
+- **Trending Search Series:** Added the ability to search for a series on the trending page.
+
    
 
 ## Where To Find This Release
 
-### ACM-4000 bootloader update version 1.1.18
+### ACM-4000 bootloader update version 1.2.0
 
-[MDI 1.1.18](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi-1.1.18/mdi-1.1.18.atf)
+[MDI 1.2.0](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.2.0/mdi-1.2.0.atf)
 
 ## Update Instructions
 
 ### For ACM-4000 with MDI Already Installed
 
-1. **Download MDI 1.1.18**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/mdi-1.1.18/mdi-1.1.18.atf?download=)
+1. **Download MDI 1.2.0**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/mdi/mdi-1.2.0/mdi-1.2.0.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000
