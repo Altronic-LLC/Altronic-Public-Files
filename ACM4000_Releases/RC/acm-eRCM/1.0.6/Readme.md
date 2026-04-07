@@ -1,4 +1,4 @@
-# [ACM-eRCM 1.0.6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf)
+# [ACM-eRCM 1.0.6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf)
 
 > **Copyright (c) 2025. All rights reserved.**
 > Altronic, LLC
@@ -6,14 +6,19 @@
 > Girard, Ohio 44420
 > United States of America
 
-## Release Kind: Preview Release
+## Release Kind: Release Candidate
 
-For demonstration and shakedown. May contain incomplete features,
-bugs of various severity.
+A pre-release version that has undergone significant testing and includes 
+all planned features and bug fixes, but may still require minor tweaks 
+or validation before the official stable release.
 
 ## Intended Use and Users
 
-Early release of software intended for internal testing and evaluation. These versions are not final and may contain bugs or incomplete features. They are distributed for testing purposes and are not to be used for production environments or field deployment.
+For initial operational evaluation and customer feedback, as controlled
+by Altronic Sales.
+
+This software is not for sale or general distribution.
+
 
 #### Versioning:
 - **ACM-eRCM:** 1.0.6
@@ -31,11 +36,11 @@ Early release of software intended for internal testing and evaluation. These ve
 
 ### ACM-eRCM update version 1.0.6
 
-[ACM-eRCM 1.0.6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf)
+[ACM-eRCM 1.0.6](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf)
 
 ## Update Instructions
 
-1. **Download ACM-eRCM 1.0.6**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/PR/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf?download=)
+1. **Download ACM-eRCM 1.0.6**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/raw/refs/heads/main/ACM4000_Releases/RC/acm-eRCM/1.0.6/acm-ercm-1.0.6.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on ACM-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into ACM-4000
