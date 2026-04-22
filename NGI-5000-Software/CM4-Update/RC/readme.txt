@@ -1,5 +1,9 @@
 Release Candidates
 
+Logic Module CM4 NGI-5000-Logic_2.2.2
+Fix for bank B being the same firing angles in the engine config tool as bank A in the NGI-5000 full system mode which caused some firing patterns to not fire bank B at the correct angles.
+
+
 DCPM CM4 v0.1.8
 Sending the config from the engine config tool might need to be sent multiple times with power cycles until the DCPM talks to the CIUs.
 
