@@ -2,7 +2,9 @@
 
 > [!WARNING]
 > **Beta Release – Verify Before Use**
-> These dashboards are currently in a **beta state**. While they have been created by Altronic, they have **not been fully validated**. Users should verify communication settings, data accuracy, and compatibility before deploying in a live environment.
+> These dashboards are currently in a **beta state**. While they have been created by Altronic, they have **not been fully validated** for all configurations. Users should verify communication settings, data accuracy, and compatibility before deploying in a live environment.
+>
+> Once validation is complete and the files meet Altronic's release standards, this warning will be removed and the dashboards will be published as an **official release**.
 
 ## Overview  
 This directory contains the **Altronic Web Interface (AWI)** dashboards and configuration files for the **ESM** or **ESM2**.
