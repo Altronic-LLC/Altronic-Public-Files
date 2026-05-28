@@ -1,1 +1,43 @@
+Got it — you want to add a note about reaching out to the Altronic support rep into the Support section of the README. Here's the updated version:
 
+README - Plus Module Software & Programming Files
+Public File Repository
+This is a public file location containing all software and programming files for the Plus Module platform.
+
+Purpose
+This repository serves as the centralized public access point for Plus Module software resources, including:
+
+Software installation files
+Programming files and source code
+Firmware updates
+Configuration files
+Documentation and reference materials
+Sample programs and templates
+
+Contents
+Files in this location are organized by category and version. Please refer to subfolder names and file naming conventions to locate the specific resources you need.
+Access & Usage
+These files are publicly available for download and use by authorized personnel, technicians, integrators, and end users working with Plus Module systems.
+Download Instructions
+
+Navigate to the appropriate subfolder for your needs
+Select the file or version required
+Download to your local machine
+Verify file integrity before deployment
+Follow any version-specific instructions included with the files
+
+Version Control
+
+Always check the date and version number before downloading
+The most recent version is typically recommended unless backward compatibility is required
+Archived versions remain available for legacy system support
+
+Important Notes
+
+Files are provided as-is for use with Plus Module equipment and systems
+Always back up existing software/configurations before applying updates
+Review release notes (when available) before installing new versions
+Test updates in a non-production environment when possible
+
+Support
+For technical questions, troubleshooting, or assistance with these files, please reach out to the Altronic support representative 
