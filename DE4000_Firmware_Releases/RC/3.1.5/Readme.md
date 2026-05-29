@@ -1,7 +1,6 @@
 # [DE-4000 Bootloader 3.1.5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.1.5/bootloader_3.1.5.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
-> HOERBIGER ENGINE DIVISION  
 > Altronic, LLC  
 > 712 Trumbull Avenue  
 > Girard, Ohio 44420  
