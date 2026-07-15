@@ -1,4 +1,4 @@
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -47,13 +47,13 @@ The officially released and fully validated version. This is the recommended ver
 
 ### DE-4000 bootloader update version 3.0.8
 
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000

@@ -7,17 +7,16 @@
   ### When to Use:
   - Use this release to apply the latest fixes, quality of life improvements, and new features while ensuring stability. This is the new baseline version.
   ### Applicable Links:
-  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/Final/)
-  - [Click here to see latest final release (DE-4000 3.0.8 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/)
-  - [Click here to download latest final release (DE-4000 3.0.8 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
+  - [Click here to see final releases](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/)
+  - [Click here to see latest final release (DE-4000 3.1.10 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/)
+  - [Click here to download latest final release (DE-4000 3.1.10 Final)](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf?download=)
   ### Change Log:
   <details>
-  <summary><h3>📋 3.0.8 Changelog (Click to expand)</h3></summary>
+  <summary><h3>📋 3.1.10 Changelog (Click to expand)</h3></summary>
 
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
-> HOERBIGER ENGINE DIVISION  
 > Altronic, LLC  
 > 712 Trumbull Avenue  
 > Girard, Ohio 44420  
@@ -27,49 +26,35 @@
 
 ## Intended Use and Users
 
-The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.n.
+The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.
 
 ### Changelog:
 
 #### New Features:
-- **HMI Control Permissions:** Added the ability to disable HMI Start/Stop/Reset functions through system settings toggles. Physical button functionality remains independent of HMI settings.
-- **State 0 Permissive Control:** Added permissive controls for State 0 that determine whether the unit can be started. Start operation is only allowed when all permissives are met.
-- **Virtual Input PID Support:** Added the ability to use Script Virtual (SVirt) inputs for PID control loops.
-- **Password Management:** Added factory-level functionality to reset Admin and User passwords.
-- **Dashboard Row Management:** Added the ability to insert or remove rows in the middle of the dashboard without having to reorganize existing content.
-- **Event Log Export:** Added the ability to export event logs while connected to the DE-4000 via PC.
-- **Battery Saver Integration:** Added battery saver script functionality with UI configuration options available in the global settings.
-- **Digital Output Usage Tracking:** Added system to track and display where digital outputs are being used throughout the system.
-- **Advanced Trending UI:** Updated the exit button color in Advanced Trending for better visibility.
+- **Auto Restart Feature:** Added auto restart feature under global -> System Timers. See sequence of operations for feature here: [Auto-Restart-Sequence-of-Operations.pdf](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/Auto-Restart-Sequence-of-Operations.pdf)
+- **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter our faults, state changes, alarms, and resets.
+- **400017 Status Register:** Added 400017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/DE-4000_REG_40017_4-7-26.xlsx)
+
+#### Obsolescence:
+- **Wifi Chip:** Added support for a new Wifi chip due to obsolescence of the previous module.
 
 #### Bug Fixes:
-- **Settings Screen Display:** Fixed scaling issues on the settings screen that caused text overlap. System information now properly displays across two lines instead of one.
-- **Script Editor Scaling:** Fixed script editor scaling when auto-scaling is enabled. The editor now uses the full screen real estate for improved text resolution and readability.
-- **Controller Performance:** Merged controller and Redis tasks on the DE-4000 Controller to resolve previous fault shutdown issues and improve system stability.
-- **Modbus Script Timing:** Modified Node Red flow to ensure Modbus scripts run after all Controller tasks are complete, minimizing Redis server contention.
-- **eFinalM IP Address:** Fixed eFinalM IP address initialization to prevent yellow/warning status at startup.
-- **Channel Configuration:** Removed the unused Vibration channel option from the channels screen to simplify configuration.
-- **Current Loop Labeling:** Updated Current Loop display name to "Current Loop (4-20 mA)" for clarity.
-- **Script Refresh Function:** Fixed Redis key handling in RefreshScript function to include proper default values when keys don't exist for terminal board never connected.
-- **ERCM Heartbeat:** Removed polling for the ercm heartbeat, ercm will now send this directly to the de-4000.
-- **Digital Output Pulse Function:** Fixed an issue with digital output pulse functionality when used with a larger timeframe.
-
-#### Quality of Life Improvements:
-- **Lua Scripting:** Added get_alarm_status function to controller for lua master scripts, returns 1 if alarm is present.
-- **Terminal Firmware Integration:** Updated terminal firmware to support new controller-redis merged functionality.
-
+- **API Req Watchdog Fault:** Fixed an issue that caused intermittant watchdog faults when using the api_req() function in script.
+- **Physical Reset Button:** Fixed an issue where pressing the physical hardware reset button would incorrectly clear class B and C faults.
+- **DO Usage Matrix:** Fixed an issue with the digital output usage matrix display.
+- **DS4 Startup Dropdown:** Fixed an issue where DS4 was not showing in the startup dropdown on boot.
 
 ## Where To Find This Release
 
-### DE-4000 bootloader update version 3.0.8
+### DE-4000 bootloader update version 3.1.10
 
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.1.10**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000
@@ -125,4 +110,3 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 # Documentation #
 [DE-4000 Doucmentation](https://www.altronic-llc.com/product/controls/de-4000/)
-

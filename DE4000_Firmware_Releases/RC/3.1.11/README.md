@@ -1,4 +1,4 @@
-# [DE-4000 Bootloader 3.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/PR/3.1.11/bootloader_3.1.11.atf)
+# [DE-4000 Bootloader 3.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.1.11/bootloader_3.1.11.atf)
 
 > **Copyright (c) 2026. All rights reserved.**  
 > Altronic, LLC  
@@ -15,7 +15,6 @@ Inteded for Application Testing prior to Final Release.
 A staging Software/Firmware version intended for Application Testing.
 
 This software is not for sale or general distribution.
-.
 
 #### Versioning:
 - **Controller App:** 3.1.11
@@ -33,13 +32,13 @@ This software is not for sale or general distribution.
 
 ### DE-4000 bootloader update version 3.1.11
 
-# [DE-4000 Bootloader 3.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/PR/3.1.11/bootloader_3.1.11.atf)
+# [DE-4000 Bootloader 3.1.11](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.1.11/bootloader_3.1.11.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.1.11**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/PR/3.1.11/bootloader_3.1.11.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.1.11**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/RC/3.1.11/bootloader_3.1.11.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000

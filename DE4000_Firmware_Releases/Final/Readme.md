@@ -1,4 +1,72 @@
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf)
+
+> **Copyright (c) 2025. All rights reserved.**  
+> Altronic, LLC  
+> 712 Trumbull Avenue  
+> Girard, Ohio 44420  
+> United States of America
+
+## Release Kind: Final Release
+
+## Intended Use and Users
+
+The officially released and fully validated version. This is the recommended version for production use. Once a version is marked Final, it represents the most stable and trusted release for that product or application.
+
+### Changelog:
+
+#### New Features:
+- **Auto Restart Feature:** Added auto restart feature under global -> System Timers. See sequence of operations for feature here: [Auto-Restart-Sequence-of-Operations.pdf](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/Auto-Restart-Sequence-of-Operations.pdf)
+- **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter our faults, state changes, alarms, and resets.
+- **400017 Status Register:** Added 400017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/DE-4000_REG_40017_4-7-26.xlsx)
+
+#### Obsolescence:
+- **Wifi Chip:** Added support for a new Wifi chip due to obsolescence of the previous module.
+
+#### Bug Fixes:
+- **API Req Watchdog Fault:** Fixed an issue that caused intermittant watchdog faults when using the api_req() function in script.
+- **Physical Reset Button:** Fixed an issue where pressing the physical hardware reset button would incorrectly clear class B and C faults.
+- **DO Usage Matrix:** Fixed an issue with the digital output usage matrix display.
+- **DS4 Startup Dropdown:** Fixed an issue where DS4 was not showing in the startup dropdown on boot.
+
+## Where To Find This Release
+
+### DE-4000 bootloader update version 3.1.10
+
+# [DE-4000 Bootloader 3.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf)
+
+
+## Update Instructions
+
+### For DE-4000 with Version >= 3.0.0
+1. **Download DE-4000 Bootloader Version 3.1.10**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf?download=)
+2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
+3. **Prepare Device**: Power on DE-4000 which you would like to update
+4. **Connect USB**: Insert USB Flash Drive into DE-4000
+5. **Access Menu**: Click Settings
+6. **Navigate to System**: Click System Info
+7. **Locate Update File**:
+   - Click Refresh 
+   - You will see the file you added to the USB
+8. **Select Update**:
+   - Click the checkbox for this file
+   - Click update
+9. **Finalize**: Once update is complete, the ACM-4000 will power cycle automatically
+
+### For DE-4000 With Version < 3.0.0
+https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-Start-Guide.pdf
+
+### Required Hardware
+- DE-4000 Controller Board
+- DE-4000 Terminal Board
+- USB Flash Drive (≥ 2GB)
+- HMI or PC
+
+---
+---
+
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf)
+
+**Now Archived**
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -47,13 +115,13 @@ The officially released and fully validated version. This is the recommended ver
 
 ### DE-4000 bootloader update version 3.0.8
 
-# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf)
+# [DE-4000 Bootloader 3.0.8](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.8/bootloader_3.0.8.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.8**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.8/bootloader_3.0.8.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000
@@ -78,7 +146,9 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 ---
 ---
-# [DE-4000 Bootloader 3.0.5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.5/bootloader_3.0.5.atf)
+# [DE-4000 Bootloader 3.0.5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.5/bootloader_3.0.5.atf)
+
+**Now Archived**
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -126,14 +196,14 @@ The officially released and fully validated version. This is the recommended ver
 
 ### DE-4000 bootloader update version 3.0.5
 
-# [DE-4000 Bootloader 3.0.5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.5/bootloader_3.0.5.atf)
+# [DE-4000 Bootloader 3.0.5](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.5/bootloader_3.0.5.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
 > **⚠️ Important:** When updating a system using the MDI (Multi Device Interface), Altronic recommends updating the DE-4000 prior to the ACM-4000 to ensure proper compatibility and system synchronization.
-1. **Download DE-4000 Bootloader Version 3.0.5**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.5/bootloader_3.0.5.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.5**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.5/bootloader_3.0.5.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000
@@ -161,7 +231,9 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 
 
-# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf)
+# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.4/bootloader_3.0.4.atf)
+
+**Now Archived**
 
 > **Copyright (c) 2025. All rights reserved.**  
 > HOERBIGER ENGINE DIVISION  
@@ -219,13 +291,13 @@ The officially released and fully validated version. This is the recommended ver
 
 ### DE-4000 bootloader update version 3.0.4
 
-# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf)
+# [DE-4000 Bootloader 3.0.4](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.4/bootloader_3.0.4.atf)
 
 
 ## Update Instructions
 
 ### For DE-4000 with Version >= 3.0.0
-1. **Download DE-4000 Bootloader Version 3.0.4**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.4/bootloader_3.0.4.atf?download=)
+1. **Download DE-4000 Bootloader Version 3.0.4**: [Download from GitHub](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.4/bootloader_3.0.4.atf?download=)
 2. **Prepare USB**: Copy downloaded file onto USB Flash Drive
 3. **Prepare Device**: Power on DE-4000 which you would like to update
 4. **Connect USB**: Insert USB Flash Drive into DE-4000
@@ -252,8 +324,10 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 
 
-## [3.0.3 Bootloader Firmware](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.3/bootloader_3.0.3.atf)
-[3.0.3 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.0.3/3.0.3.zip)
+## [3.0.3 Bootloader Firmware](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.3/bootloader_3.0.3.atf)
+[3.0.3 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.3/3.0.3.zip)
+
+**Now Archived**
 
 > **Note:** Bootloader updates should complete within 10 minutes, whether using the Terminal Controller or WebApp. If the update appears stuck at 99% for longer than 10 minutes, power cycle the system and attempt the update again.
 
@@ -265,7 +339,7 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 ---
 
-[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/3.0.2.zip)
+[3.0.2 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.2/3.0.2.zip)
 
 **Now Archived**
 
@@ -307,8 +381,8 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 ---
 
-[3.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/3.0.1/3.0.1.zip)
-[3.0.1 Bootloader Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/3.0.1/bootloader_3.0.1.zip)
+[3.0.1 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.1/3.0.1.zip)
+[3.0.1 Bootloader Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.1/bootloader_3.0.1.zip)
 
 **Now Archived**
 
@@ -362,7 +436,7 @@ https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-
 
 ---
 
-[3.0.0 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/3.0.0/3.0.0.zip)
+[3.0.0 Firmware Release](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/archive/Final/3.0.0/3.0.0.zip)
 
 **Now Archived**
 
