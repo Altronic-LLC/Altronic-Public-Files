@@ -1,6 +1,6 @@
 # [DE-4000 Bootloader 3.1.10](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/DE4000_Firmware_Releases/Final/3.1.10/bootloader_3.1.10.atf)
 
-> **Copyright (c) 2025. All rights reserved.**  
+> **Copyright (c) 2026. All rights reserved.**  
 > Altronic, LLC  
 > 712 Trumbull Avenue  
 > Girard, Ohio 44420  
@@ -16,14 +16,14 @@ The officially released and fully validated version. This is the recommended ver
 
 #### New Features:
 - **Auto Restart Feature:** Added auto restart feature under global -> System Timers. See sequence of operations for feature here: [Auto-Restart-Sequence-of-Operations.pdf](Auto-Restart-Sequence-of-Operations.pdf)
-- **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter our faults, state changes, alarms, and resets.
-- **400017 Status Register:** Added 400017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx)
+- **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter out faults, state changes, alarms, and resets.
+- **40017 Status Register:** Added 40017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx)
 
 #### Obsolescence:
 - **Wifi Chip:** Added support for a new Wifi chip due to obsolescence of the previous module.
 
 #### Bug Fixes:
-- **API Req Watchdog Fault:** Fixed an issue that caused intermittant watchdog faults when using the api_req() function in script.
+- **API Req Watchdog Fault:** Fixed an issue that caused intermittent watchdog faults when using the api_req() function in script.
 - **Physical Reset Button:** Fixed an issue where pressing the physical hardware reset button would incorrectly clear class B and C faults.
 - **DO Usage Matrix:** Fixed an issue with the digital output usage matrix display.
 - **DS4 Startup Dropdown:** Fixed an issue where DS4 was not showing in the startup dropdown on boot.
@@ -50,10 +50,10 @@ The officially released and fully validated version. This is the recommended ver
 8. **Select Update**:
    - Click the checkbox for this file
    - Click update
-9. **Finalize**: Once update is complete, the ACM-4000 will power cycle automatically
+9. **Finalize**: Once update is complete, the DE-4000 will power cycle automatically
 
 ### For DE-4000 With Version < 3.0.0
-https://www.altronic-llc.com/wp-content/uploads/DE-4000-Firmware-Download-Quick-Start-Guide.pdf
+https://www.altronic-llc.com/wp-content/uploads/DE-4000_QSG_07-25.pdf
 
 ### Required Hardware
 - DE-4000 Controller Board
