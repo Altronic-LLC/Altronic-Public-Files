@@ -145,7 +145,7 @@ and does not use a general software license.
  
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
  
-For questions or support, contact Altronic Support [Altronic.Support@hoerbiger.com] or visit [https://www.altronic-llc.com/].
+For questions or support, contact Altronic Support [support@altronic-llc.com] or visit [https://www.altronic-llc.com/].
  
 © 2025 Altronic, LLC. All rights reserved.
  
