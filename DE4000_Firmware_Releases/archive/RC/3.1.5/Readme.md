@@ -21,7 +21,7 @@ This software is not for sale or general distribution.
 #### New Features:
 - **Auto Restart Feautre:** Added auto restart feature under global -> System Timers. See sequence of operations for feature here: [Auto-Restart-Sequence-of-Operations.pdf](Auto-Restart-Sequence-of-Operations.pdf)
 - **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter our faults, state changes, alarms, and resets.
-- **400017 Status Register:** Added 400017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx)
+- **40017 Status Register:** Added 40017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx)
 
 #### Bug Fixes:
 - **API Req Watchdog Fault:** Fixed an issue that caused intermittant watchdog faults when using the api_req() function in script.

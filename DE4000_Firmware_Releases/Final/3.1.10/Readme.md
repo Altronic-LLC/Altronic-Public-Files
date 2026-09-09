@@ -17,7 +17,7 @@ The officially released and fully validated version. This is the recommended ver
 #### New Features:
 - **Auto Restart Feature:** Added auto restart feature under global -> System Timers. See sequence of operations for feature here: [Auto-Restart-Sequence-of-Operations.pdf](Auto-Restart-Sequence-of-Operations.pdf)
 - **Event Log Overhaul:** Added event log overhaul. Event log is no longer handled in the browser and is handled on the controller. Added the ability to Export events to a csv file when connected with a PC. Added the ability to log state changes. Added the ability to filter out faults, state changes, alarms, and resets.
-- **40017 Status Register:** Added 40017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx)
+- **40017 Status Register:** Added 40017 status register, which is meant to give all information for status inside of 1 register. See breakdown of all values here: [DE-4000_REG_40017_4-7-26.xlsx](DE-4000_REG_40017_4-7-26.xlsx). For how to index custom faults and eRCM faults from script so each one reports its own 40017 value, see [Custom And eRCM Faults](https://github.com/Altronic-LLC/de4000-scripting/blob/main/documented-scripts/Custom_And_eRCM_Faults/40017_Custom_and_eRCM_Faults.md) in the [de4000-scripting](https://github.com/Altronic-LLC/de4000-scripting) repository, and the paste-in helpers in [Custom_And_eRCM_Faults.lua](https://github.com/Altronic-LLC/de4000-scripting/blob/main/documented-scripts/Custom_And_eRCM_Faults/Custom_And_eRCM_Faults.lua).
 
 #### Obsolescence:
 - **Wifi Chip:** Added support for a new Wifi chip due to obsolescence of the previous module.
