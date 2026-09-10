@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **Known issue in this Release Candidate.** An issue was found with MDI 1.6.3 on legacy ACM-4000 units: the screen can stop responding after saving on the Settings or Layout page, and only a power cycle recovers it. We believe this issue is resolved in MDI 1.7.0. However, 1.7.0 still needs to go through validation and our full test process before it can be upgraded to a Release Candidate. Until that is complete, do not install 1.6.3 on legacy ACM-4000 units.
+
 # [MDI 1.6.3](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.6.3/mdi-1.6.3.atf)
 
 > **Copyright (c) 2026. All rights reserved.**  
