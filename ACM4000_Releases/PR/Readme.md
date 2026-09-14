@@ -15,6 +15,13 @@ A **Pre-Release Candidate (PR)** version is an early release of software intende
 
 ---
 
+# [MDI 1.6.3 - downgraded from Release Candidate](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/mdi-1.6.3.atf)
+
+> [!CAUTION]
+> Withdrawn as a Release Candidate on 2026-09-14: on legacy ACM-4000 units the screen could stop responding after saving on the Settings or Layout page. Kept here for reference only - **do not install**. Use [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.7.1/) instead. Full notes: [mdi-1.6.3/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/Readme.md).
+
+---
+
 # [MDI 1.1.18](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi-1.1.18/mdi-1.1.18.atf)
 
 > **Copyright (c) 2025. All rights reserved.**  
