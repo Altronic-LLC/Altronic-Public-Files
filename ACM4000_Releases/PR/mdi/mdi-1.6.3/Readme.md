@@ -1,5 +1,5 @@
 > [!CAUTION]
-> **Downgraded from Release Candidate to Preview Release on 2026-09-14.** MDI 1.6.3 was withdrawn as a Release Candidate: on legacy ACM-4000 units the screen can stop responding after saving on the Settings or Layout page, and only a power cycle recovers it. This file is kept for reference only. **Do not install 1.6.3.** Use [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.7.1/), which resolves this issue.
+> **Downgraded from Release Candidate to Preview Release on 2026-09-14.** MDI 1.6.3 was withdrawn as a Release Candidate: on legacy ACM-4000 units the screen can stop responding after saving on the Settings or Layout page, and only a power cycle recovers it. This file is kept for reference only. **Do not install 1.6.3.** Use [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/) (Preview Release), which resolves this issue.
 
 # [MDI 1.6.3](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/mdi-1.6.3.atf)
 
@@ -12,8 +12,8 @@
 ## Release Kind: Preview Release (downgraded from Release Candidate)
 
 Withdrawn as a Release Candidate on 2026-09-14 because of the issue noted
-above. Kept for reference and evaluation only - not for field use. The
-current release candidate is [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/RC/1.7.1/).
+above. Kept for reference and evaluation only - not for field use. Use
+[MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/).
 
 ## Intended Use and Users
 
