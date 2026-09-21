@@ -64,8 +64,4 @@ Updating requires a computer and a Wi-Fi or Ethernet connection to the Logic Mod
 
 ## Design Source Repository:
 
-The following repositories contribute code to the CM4 Logic Module package:
-* github.com/Altronic-LLC/iris-go
-* github.com/Altronic-LLC/mb485_proxy
-* github.com/Altronic-LLC/NGI-5000-Firing-Pattern-Config
-* github.com/Altronic-LLC/engine_config_go
+This CM4 Logic release package is based on code from repositories internal to Altronic.
