@@ -15,9 +15,15 @@ A **Pre-Release Candidate (PR)** version is an early release of software intende
 
 ---
 
+# [MDI 1.7.2](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.2/mdi-1.7.2.atf)
+
+Preview Release. Supersedes 1.7.1, 1.7.0 and 1.6.3, and contains every change since 1.1.17. Safer software updates from USB or over the network on every unit, Reset to Factory now works, clearer messages when a setting or file is refused, Live Data Viewer write feedback, Wi-Fi status, network saves that leave unchanged ports alone, and more reliable RS-485 readings, datalogging and exports. Installing replaces the Master AWI with 2.0.7. Full notes with screenshots: [mdi-1.7.2/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.2/Readme.md).
+
+---
+
 # [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/mdi-1.7.1.atf)
 
-Preview Release. Supersedes 1.7.0 and 1.6.3: the screen stays responsive when the layout or settings are saved with the DE-4000 disconnected (legacy ACM-4000 units), immediate device switching, better behaviour when memory runs low, Master AWI 2.0.7. Full notes: [mdi-1.7.1/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/Readme.md).
+Preview Release, superseded by 1.7.2. Supersedes 1.7.0 and 1.6.3: the screen stays responsive when the layout or settings are saved with the DE-4000 disconnected (legacy ACM-4000 units), immediate device switching, better behaviour when memory runs low, Master AWI 2.0.7. Full notes: [mdi-1.7.1/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/Readme.md).
 
 ---
 
@@ -30,7 +36,7 @@ Preview Release, superseded by 1.7.1. Reset to Factory, Restart from the screen,
 # [MDI 1.6.3 - downgraded from Release Candidate](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/mdi-1.6.3.atf)
 
 > [!CAUTION]
-> Withdrawn as a Release Candidate on 2026-09-14: on legacy ACM-4000 units the screen could stop responding after saving on the Settings or Layout page. Kept here for reference only - **do not install**. Use [MDI 1.7.1](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.1/) instead. Full notes: [mdi-1.6.3/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/Readme.md).
+> Withdrawn as a Release Candidate on 2026-09-14: on legacy ACM-4000 units the screen could stop responding after saving on the Settings or Layout page. Kept here for reference only - **do not install**. Use [MDI 1.7.2](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.7.2/) instead. Full notes: [mdi-1.6.3/Readme.md](https://github.com/Altronic-LLC/Altronic-Public-Files/blob/main/ACM4000_Releases/PR/mdi/mdi-1.6.3/Readme.md).
 
 ---
 
